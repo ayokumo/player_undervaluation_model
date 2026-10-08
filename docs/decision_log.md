@@ -34,3 +34,10 @@ Decision: top five = GB1, ES1, IT1, L1, FR1.
 Decision: drop transfers dated after 2026-07-06 (snapshot date).
 Reason: dataset contains future dated transfers (520 rows, max 2030-06-30).
 Affects: all transfer based counts and labels.
+## 2026-10-08: RAG scouting assistant added as a component
+Decision: build a LangChain RAG assistant inside this repo (rag/, eval/), PostgreSQL with pgvector,
+sentence transformers embeddings, Claude API default with Ollama option, 20 question SQL backed benchmark.
+Reason: plain language search over pre transfer player profiles, with a measurable accuracy number.
+Open: stat source (FBref advanced stats removed Jan 2026), league list vs Phase 1 sources,
+DuckDB vs Postgres for the main pipeline.
+Affects: new dependencies (to be pinned when step 2 starts), new Postgres setup, leakage rule applies to any RAG output fed to the model.
