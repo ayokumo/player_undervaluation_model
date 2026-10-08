@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "status": "schema only, 0 of 20 questions written",
+  "rules": [
+    "Every expected answer comes from running the saved SQL against the database, never written by hand.",
+    "Types to cover: single_fact, filtered_ranking, profile_match, comparison, not_enough_data."
+  ],
+  "questions": [
+    {
+      "id": "q00_example",
+      "type": "filtered_ranking",
+      "question": "EXAMPLE ONLY, not scored: top 3 wingers by key passes per 90 in the Eredivisie, minimum 900 minutes?",
+      "sql": "SELECT player_id, name, season FROM player_season_stats WHERE league = 'NL1' AND position_group = 'winger' AND minutes >= 900 ORDER BY key_passes_p90 DESC LIMIT 3;",
+      "expected_answer": null,
+      "expected_citations": null,
+      "scored": false
+    }
+  ]
+}
