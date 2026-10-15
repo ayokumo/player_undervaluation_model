@@ -18,7 +18,7 @@ def _graph():
     if _GRAPH is None:
         from langchain_anthropic import ChatAnthropic
         from rag.embedder import embed
-        llm = ChatAnthropic(model=os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5-5"), temperature=0, max_tokens=800)
+        llm = ChatAnthropic(model=os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5-5"), max_tokens=800)
         _GRAPH = build_graph(llm, embed_fn=embed)
     return _GRAPH
 

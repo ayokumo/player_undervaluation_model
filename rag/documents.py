@@ -71,6 +71,8 @@ def build_profile(row: dict) -> ProfileDocument:
             f"Position: {position}",
             f"League: {row['league']}  Club: {row['club']}",
             f"Age: {row['age']}  Minutes: {row['minutes']}  Appearances: {_show(row.get('apps'), '{:.0f}')}",
+            f"Totals: goals {_show(row.get('goals'), '{:.0f}')}, assists {_show(row.get('assists'), '{:.0f}')}, "
+            f"yellow cards {_show(row.get('yellows'), '{:.0f}')}, red cards {_show(row.get('reds'), '{:.0f}')}",
             f"Market value at season end (EUR): {_show(row.get('market_value_eur'), '{:,.0f}')}",
             "Stats (per 90 where named p90):",
             *stat_lines,
