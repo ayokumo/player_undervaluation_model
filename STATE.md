@@ -1,7 +1,7 @@
-DATE: 2026-10-05
-CURRENT STAGE: 0 (Scoping and setup), closing
-LAST THING COMPLETED: Repo, environment, data download, coverage check, decision log, README
-WHAT I'M WORKING ON NOW: Committing Stage 0, then Stage 1 (src/ingest.py and raw profiling)
+DATE: 2026-10-15
+CURRENT STAGE: 2 (models and shortlist done, RAG next)
+LAST THING COMPLETED: Postgres load, pre transfer table (1,669 records), sklearn and PyTorch models, top 100 shortlists
+WHAT I AM WORKING ON NOW: RAG assistant (Step 3)
 
 SCOPE
   Source league(s): BE1, NL1, PO1, TR1, SC1, DK1, GR1, RU1, UKR1 (Phase 1)
@@ -16,14 +16,14 @@ DATA SOURCES (verified? date checked):
   Season label convention (2012 = 2012/13) UNVERIFIED
 
 KEY NUMBERS
-  Players in raw data: UNKNOWN
+  Players in raw data: 50,149
   Match rate across sources: N/A (single source, shared player_id)
   Labeled transfers (success / failure): N/A
   Train period / test period: N/A
   Best model + test metrics: N/A
   Baseline metrics: N/A
   Transfers table: 175,165 rows, 520 future dated
-  Rough movers into top five from the 9 sources: about 2,896 (uses current club league, unverified)
+  Pre transfer records (measured 2026-10-15): 1,669; the 2,896 estimate used current club leagues and is superseded
 
 DECISION LOG (latest entries):
   Phased scope; dcaribou data source; Python 3.14.3 venv; Phase 1 source leagues;

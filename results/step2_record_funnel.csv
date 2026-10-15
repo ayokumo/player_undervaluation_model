@@ -1,0 +1,8 @@
+step,description,n
+1,rows in transfers table,175165
+2,dated on or before snapshot 2026-07-06,174645
+3,dated 2013-06-01 to 2024-09-30 (label window complete),133276
+4,from club in one of the 9 source leagues,13519
+5,and to club in a top five league (GB1 ES1 IT1 L1 FR1),1725
+6,after dropping same club moves and duplicate rows,1725
+7,pre transfer records with at least 1 appearance in the 365 days before the move,1669

@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Vladyslav Pryimak,Obolon Kyiv,Defender,29.8,1485.0,400000,0.401,0.518
+2,Dmytro Semenov,Obolon Kyiv,Defender,26.7,2214.0,400000,0.4,0.515
+3,Valeriy Dubko,TOV FK Metalist 1925 Kharkiv,Defender,25.3,1785.0,500000,0.416,0.418
+4,Semen Vovchenko,NK Veres Rivne,Defender,27.1,1502.0,500000,0.407,0.411
+5,Andriy Savenkov,SC Poltava,Defender,29.6,1500.0,200000,0.195,0.409
+6,Mykyta Kononov,SC Poltava,Defender,23.5,1763.0,300000,0.219,0.389
+7,Vitaliy Kholod,Karpaty Lviv,Defender,22.5,2607.0,600000,0.455,0.378
+8,Artem Machelyuk,FC Kudrivka,Defender,26.7,2298.0,400000,0.28,0.376
+9,Nil Coch,Epicentr Kamyanets-Podilskyi,Defender,28.2,2309.0,400000,0.278,0.372
+10,Denys Pidgurskyi,Rukh Lviv,Midfield,23.1,1775.0,500000,0.37,0.37
+11,Yegor Prokopenko,Obolon Kyiv,Defender,28.1,1364.0,300000,0.209,0.352
+12,Artur Dumanyuk,FC Kudrivka,Midfield,29.6,1948.0,350000,0.222,0.345
+13,Roman Volokhatyi,Obolon Kyiv,Midfield,25.9,1105.0,300000,0.206,0.338
+14,Vitaliy Roman,Rukh Lviv,Defender,23.2,1792.0,500000,0.336,0.338
+15,Mykola Buzhyn,SC Poltava,Defender,27.3,1514.0,300000,0.202,0.327
+16,Andriy Kozhukhar,NK Veres Rivne,Goalkeeper,27.0,540.0,300000,0.201,0.323
+17,Vadym Pidlepych,SC Poltava,Defender,27.2,1593.0,200000,0.166,0.321
+18,Maksym Melnychuk,FC Kudrivka,Defender,26.8,1284.0,400000,0.238,0.318
+19,Oleg Veremiyenko,SC Poltava,Defender,27.4,1480.0,250000,0.174,0.296
+20,Andriy Ponedelnik,Kolos Kovalivka,Defender,29.3,2522.0,800000,0.476,0.283
+21,Rostyslav Lyakh,Karpaty Lviv,Defender,25.7,2774.0,700000,0.42,0.277
+22,Ilya Ukhan,SC Poltava,Defender,23.1,1078.0,150000,0.147,0.277
+23,Miguel Campos,FC Oleksandriya,Defender,29.9,2082.0,800000,0.458,0.272
+24,Anton Bol,FC Oleksandriya,Defender,23.5,2015.0,400000,0.223,0.27
+25,Jakov Basic,Zorya Lugansk,Midfield,29.6,1021.0,600000,0.353,0.268
+26,Vladyslav Baboglo,Karpaty Lviv,Defender,27.6,2352.0,1000000,0.532,0.265
+27,Mykhaylo Protasevych,NK Veres Rivne,Defender,21.6,581.0,300000,0.187,0.265
+28,Myroslav Serdyuk,FC Kudrivka,Defender,26.9,1805.0,400000,0.219,0.263
+29,Denys Slyusar,Rukh Lviv,Defender,24.1,1223.0,400000,0.217,0.255
+30,Jordan,Zorya Lugansk,Defender,27.2,2567.0,1000000,0.525,0.254
+31,Valentyn Gorokh,NK Veres Rivne,Goalkeeper,25.4,2340.0,500000,0.258,0.246
+32,Maksym Chekh,Obolon Kyiv,Midfield,27.5,1762.0,400000,0.215,0.245
+33,Jocelin Behiratche,FC Oleksandriya,Defender,26.2,1528.0,400000,0.215,0.241
+34,Oleg Slobodyan,Obolon Kyiv,Midfield,29.8,1161.0,300000,0.177,0.235
+35,Bogdan Veklyak,FC Kudrivka,Defender,26.8,1166.0,300000,0.176,0.232
+36,Stepan Grygorashchuk,Epicentr Kamyanets-Podilskyi,Defender,25.5,1732.0,400000,0.212,0.23
+37,Vladyslav Sharay,NK Veres Rivne,Attack,29.1,2109.0,500000,0.249,0.224
+38,Ostap Prytula,Rukh Lviv,Midfield,26.0,2527.0,600000,0.309,0.224
+39,Oleksandr Klymets,Epicentr Kamyanets-Podilskyi,Defender,26.4,2001.0,400000,0.207,0.219
+40,Ibrahim Kane,Kolos Kovalivka,Midfield,26.0,1298.0,600000,0.307,0.217
+41,Roman Vantukh,Zorya Lugansk,Defender,28.0,1903.0,700000,0.355,0.212
+42,Ivan Losenko,FC Kudrivka,Midfield,21.9,1027.0,200000,0.139,0.208
+43,Danil Skorko,FC Oleksandriya,Defender,24.2,1857.0,600000,0.301,0.206
+44,Danyil Sukhoruchko,SC Poltava,Attack,26.4,1143.0,250000,0.151,0.204
+45,Andriy Kitela,Rukh Lviv,Defender,21.6,1459.0,500000,0.239,0.203
+46,Maksym Smiyan,NK Veres Rivne,Defender,24.2,2166.0,600000,0.297,0.199
+47,Oleksandr Zhovtenko,Obolon Kyiv,Defender,21.4,889.0,250000,0.147,0.193
+48,Oleksandr Drambayev,LNZ Cherkasy,Defender,25.2,1858.0,900000,0.426,0.193
+49,Jon Ceberio,Epicentr Kamyanets-Podilskyi,Midfield,29.8,1853.0,350000,0.178,0.192
+50,Mykyta Kravchenko,FK Polissya Zhytomyr,Defender,29.1,1392.0,1000000,0.457,0.188
+51,Eduard Kozik,Kolos Kovalivka,Defender,23.2,2198.0,800000,0.398,0.188
+52,Edson Fernando,Karpaty Lviv,Midfield,28.2,1570.0,500000,0.23,0.184
+53,Oleksiy Sych,Karpaty Lviv,Defender,25.3,1193.0,700000,0.327,0.182
+54,Nazariy Muravskyi,LNZ Cherkasy,Defender,26.4,2299.0,1200000,0.495,0.181
+55,Vladyslav Moroz,Epicentr Kamyanets-Podilskyi,Defender,24.8,1800.0,400000,0.198,0.179
+56,Ivan Nesterenko,Obolon Kyiv,Midfield,23.0,1136.0,300000,0.16,0.177
+57,Sergiy Chobotenko,FK Polissya Zhytomyr,Defender,29.5,2610.0,1500000,0.53,0.175
+58,Oleg Bilyk,Epicentr Kamyanets-Podilskyi,Goalkeeper,28.5,2340.0,400000,0.197,0.168
+59,Sergiy Korniychuk,NK Veres Rivne,Defender,22.0,664.0,150000,0.117,0.168
+60,Konstantinos Stamoulis,NK Veres Rivne,Defender,25.7,2589.0,700000,0.309,0.161
+61,Mykola Ogarkov,FC Oleksandriya,Defender,21.4,1586.0,400000,0.195,0.161
+62,Petar Micin,Zorya Lugansk,Midfield,27.8,1073.0,600000,0.258,0.159
+63,Oleksiy Tovarnytskyi,Rukh Lviv,Defender,21.9,940.0,200000,0.127,0.157
+64,Vladyslav Danylenko,SC Poltava,Midfield,27.8,1232.0,200000,0.125,0.153
+65,Ilir Krasniqi,Kolos Kovalivka,Defender,26.3,1902.0,1000000,0.424,0.148
+66,Vitaliy Boyko,NK Veres Rivne,Midfield,28.6,2356.0,600000,0.249,0.144
+67,Dmytro Godya,NK Veres Rivne,Midfield,21.3,709.0,250000,0.135,0.142
+68,Valeriy Sad,SC Poltava,Midfield,27.5,611.0,200000,0.121,0.142
+69,Zurab Rukhadze,Kolos Kovalivka,Defender,22.9,637.0,200000,0.117,0.135
+70,Yuriy-Volodymyr Gereta,Rukh Lviv,Goalkeeper,22.4,2520.0,400000,0.185,0.131
+71,Daniil Vashchenko,FC Oleksandriya,Midfield,20.8,1337.0,400000,0.184,0.128
+72,Roman Didyk,LNZ Cherkasy,Defender,23.6,2255.0,1500000,0.485,0.124
+73,Kai Cipot,NK Veres Rivne,Defender,25.2,2625.0,700000,0.292,0.124
+74,Ivan Kalyuzhnyi,TOV FK Metalist 1925 Kharkiv,Midfield,28.5,2762.0,2000000,0.522,0.12
+75,Arsentiy Doroshenko,SC Poltava,Midfield,26.0,1589.0,250000,0.131,0.12
+76,Denys Shostak,FC Oleksandriya,Midfield,23.4,1104.0,400000,0.183,0.12
+77,Oleg Gorin,LNZ Cherkasy,Defender,26.4,2428.0,1200000,0.444,0.119
+78,Rostyslav Taranukha,NK Veres Rivne,Attack,29.4,476.0,200000,0.114,0.117
+79,Ilya Krupskyi,TOV FK Metalist 1925 Kharkiv,Defender,21.8,2932.0,1800000,0.502,0.117
+80,Shota Nonikashvili,LNZ Cherkasy,Midfield,25.5,1011.0,700000,0.281,0.117
+81,Oleg Ilyin,Obolon Kyiv,Midfield,29.1,902.0,300000,0.146,0.115
+82,Kyrylo Dryshlyuk,Zorya Lugansk,Midfield,26.8,670.0,500000,0.213,0.115
+83,Bogdan Mykhaylichenko,FK Polissya Zhytomyr,Defender,29.3,3092.0,2500000,0.539,0.113
+84,Andriy Lipovuz,Epicentr Kamyanets-Podilskyi,Midfield,28.4,699.0,250000,0.129,0.113
+85,Denys Kuzyk,LNZ Cherkasy,Midfield,23.8,2908.0,2000000,0.511,0.109
+86,Jean Pedroso,Karpaty Lviv,Defender,22.4,1691.0,900000,0.344,0.106
+87,Fernando Henrique,FC Oleksandriya,Midfield,25.1,1257.0,600000,0.231,0.104
+88,Eduard Sarapiy,FK Polissya Zhytomyr,Defender,27.2,3163.0,2500000,0.526,0.102
+89,Yevgeniy Pastukh,LNZ Cherkasy,Midfield,22.3,2513.0,1000000,0.39,0.1
+90,Denys Popov,Dynamo Kyiv,Defender,27.4,1337.0,3000000,0.542,0.099
+91,Andriy Lomnytskyi,Obolon Kyiv,Defender,20.8,526.0,200000,0.112,0.099
+92,Maksym Boyko,Rukh Lviv,Midfield,21.3,969.0,250000,0.125,0.095
+93,Ajdi Dajko,LNZ Cherkasy,Defender,23.7,509.0,600000,0.229,0.093
+94,Maryan Faryna,FC Kudrivka,Defender,22.9,907.0,350000,0.152,0.093
+95,Oleksiy Gusev,FC Kudrivka,Defender,21.3,1155.0,500000,0.206,0.093
+96,Christopher Nwaeze,Zorya Lugansk,Defender,23.6,540.0,200000,0.111,0.091
+97,Navin Malysh,Zorya Lugansk,Midfield,22.9,842.0,400000,0.172,0.091
+98,Yuriy Potimkov,FC Kudrivka,Defender,23.9,460.0,150000,0.103,0.091
+99,Artem Kulakovskyi,Obolon Kyiv,Midfield,24.4,624.0,200000,0.109,0.088
+100,Muharrem Jashari,LNZ Cherkasy,Midfield,28.4,1459.0,1000000,0.363,0.086

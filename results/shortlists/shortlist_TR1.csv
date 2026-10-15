@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Pedro Pereira,Gençlerbirliği Spor Kulübü,Defender,28.5,2618.0,1200000,0.565,0.699
+2,Thalisson,Gençlerbirliği Spor Kulübü,Defender,28.2,2529.0,700000,0.473,0.655
+3,Youssef Aït Bennasser,Kayserispor,Midfield,30.0,1476.0,800000,0.416,0.529
+4,Arda Kızıldağ,Gaziantep FK,Defender,27.7,1766.0,800000,0.407,0.511
+5,Nicholas Opoku,Kasimpasa,Defender,28.9,2432.0,1500000,0.505,0.493
+6,Nuno Lima,Alanyaspor,Defender,25.3,2826.0,2000000,0.54,0.423
+7,Gaius Makouta,Alanyaspor,Midfield,28.9,2673.0,2000000,0.526,0.409
+8,Deian Sorescu,Gaziantep FK,Defender,28.9,1555.0,1500000,0.447,0.4
+9,Giannis Papanikolaou,Caykur Rizespor,Midfield,27.6,1839.0,1200000,0.359,0.372
+10,Berkay Özcan,Fatih Karagümrük,Midfield,28.4,2376.0,1200000,0.354,0.367
+11,Zan Zuzek,Gençlerbirliği Spor Kulübü,Defender,29.4,2744.0,700000,0.292,0.363
+12,Uğurcan Yazğılı,Konyaspor,Defender,27.2,2005.0,2000000,0.496,0.352
+13,Muhammed Şengezer,Basaksehir FK,Goalkeeper,29.5,3420.0,3500000,0.571,0.334
+14,Yhoan Andzouana,Konyaspor,Defender,29.6,2615.0,800000,0.294,0.33
+15,Riechedly Bazoer,Konyaspor,Defender,29.7,1018.0,1500000,0.384,0.33
+16,Fatih Aksoy,Alanyaspor,Defender,28.7,833.0,1000000,0.309,0.325
+17,Ogün Özçiçek,Gaziantep FK,Midfield,27.4,1171.0,500000,0.232,0.323
+18,Attila Mocsi,Caykur Rizespor,Defender,26.1,1746.0,2000000,0.469,0.321
+19,Adil Demirbağ,Konyaspor,Defender,28.6,2088.0,3000000,0.555,0.316
+20,Mateusz Lis,Göztepe,Goalkeeper,29.4,3060.0,2500000,0.521,0.305
+21,Bilal Bayazıt,Kayserispor,Goalkeeper,27.2,2520.0,1800000,0.417,0.305
+22,Nihad Mujakic,Gaziantep FK,Defender,28.2,2203.0,1200000,0.319,0.305
+23,Nicolas Janvier,Alanyaspor,Midfield,27.9,1532.0,700000,0.271,0.305
+24,Anfernee Dijksteel,Kocaelispor,Defender,29.7,2687.0,1200000,0.317,0.301
+25,Soner Gönül,Samsunspor,Defender,29.1,825.0,500000,0.223,0.301
+26,Godfried Frimpong,Kasimpasa,Defender,27.2,2197.0,2000000,0.449,0.294
+27,Olivier Kemen,Basaksehir FK,Midfield,30.0,2508.0,2500000,0.501,0.279
+28,Botond Balogh,Kocaelispor,Defender,24.1,1657.0,2500000,0.484,0.257
+29,Jerome Opoku,Basaksehir FK,Defender,27.7,3056.0,5000000,0.59,0.257
+30,Modibo Sagnan,Caykur Rizespor,Defender,27.2,1499.0,2000000,0.422,0.25
+31,Felix Uduokhai,Beşiktaş Jimnastik Kulübü,Defender,28.8,1485.0,3500000,0.538,0.241
+32,Taha Şahin,Caykur Rizespor,Defender,25.7,1787.0,3000000,0.514,0.241
+33,Hüseyin Türkmen,Antalyaspor,Defender,28.5,1431.0,300000,0.178,0.239
+34,Bünyamin Balcı,Antalyaspor,Defender,26.1,2351.0,2000000,0.415,0.237
+35,Antoine Makoumbou,Samsunspor,Midfield,28.0,2412.0,4000000,0.548,0.232
+36,Berat Özdemir,Basaksehir FK,Midfield,28.1,1418.0,2500000,0.462,0.226
+37,Yalçın Kayan,Eyüpspor,Midfield,27.4,1720.0,1000000,0.253,0.215
+38,Yunus Emre Çift,Samsunspor,Defender,22.8,772.0,600000,0.201,0.215
+39,Ianis Hagi,Alanyaspor,Midfield,27.7,1404.0,1800000,0.348,0.212
+40,Arif Boşluk,Konyaspor,Defender,23.1,1134.0,800000,0.233,0.21
+41,Jhon Espinoza,Kasimpasa,Defender,27.4,558.0,600000,0.197,0.21
+42,Show,Kocaelispor,Midfield,27.3,2321.0,1500000,0.311,0.206
+43,Ibrahim Olawoyin,Caykur Rizespor,Midfield,28.6,2041.0,2200000,0.423,0.204
+44,Malcom Bokele,Göztepe,Defender,26.4,2652.0,5000000,0.555,0.195
+45,Kenneth Paal,Antalyaspor,Defender,29.0,2882.0,2000000,0.365,0.188
+46,Andri Fannar Baldursson,Kasimpasa,Midfield,24.5,2720.0,2000000,0.365,0.184
+47,Rick van Drongelen,Samsunspor,Defender,27.5,3003.0,6000000,0.562,0.179
+48,Tayyip Talha Sanuç,Gaziantep FK,Defender,26.6,1337.0,1500000,0.302,0.175
+49,Christopher Lungoyi,Gaziantep FK,Attack,26.0,1801.0,1000000,0.231,0.166
+50,Celil Yüksel,Samsunspor,Midfield,28.5,1280.0,800000,0.215,0.166
+51,Ogün Bayrak,Göztepe,Midfield,27.7,552.0,700000,0.196,0.164
+52,Mustafa Eskihellaç,Trabzonspor,Defender,29.2,2329.0,4000000,0.507,0.162
+53,Oğulcan Ülgün,Gençlerbirliği Spor Kulübü,Midfield,28.2,1621.0,1200000,0.252,0.155
+54,Dario Saric,Antalyaspor,Midfield,29.1,1398.0,700000,0.193,0.15
+55,Talha Ülvan,Eyüpspor,Defender,25.2,1106.0,400000,0.156,0.15
+56,Burak Bozan,Gaziantep FK,Goalkeeper,25.9,1234.0,600000,0.17,0.148
+57,Abdurrahim Dursun,Gençlerbirliği Spor Kulübü,Defender,27.6,661.0,250000,0.146,0.148
+58,Miguel Crespo,Basaksehir FK,Midfield,29.8,1579.0,2000000,0.346,0.148
+59,Emirhan Topçu,Beşiktaş Jimnastik Kulübü,Defender,25.7,2192.0,7000000,0.565,0.146
+60,Melih İbrahimoğlu,Konyaspor,Midfield,26.0,2286.0,2500000,0.412,0.146
+61,Çağtay Kurukalıp,Fatih Karagümrük,Defender,24.4,1271.0,600000,0.17,0.139
+62,Christopher Operi,Basaksehir FK,Defender,29.2,2534.0,4000000,0.486,0.131
+63,Yahia Fofana,Caykur Rizespor,Goalkeeper,25.9,3060.0,5000000,0.523,0.128
+64,Mert Müldür,Fenerbahce,Defender,27.3,2055.0,7000000,0.558,0.124
+65,Mithat Pala,Caykur Rizespor,Defender,25.9,1943.0,3000000,0.436,0.122
+66,Jakub Kaluzinski,Basaksehir FK,Midfield,23.7,531.0,2500000,0.381,0.115
+67,Ali Yavuz Kol,Kasimpasa,Attack,25.4,707.0,250000,0.127,0.113
+68,Eren Elmalı,Galatasaray,Defender,26.0,1905.0,5000000,0.509,0.111
+69,Sofyan Amrabat,Fenerbahce,Midfield,29.9,2307.0,10000000,0.573,0.106
+70,Jesper Ceesay,Antalyaspor,Midfield,24.7,2138.0,1500000,0.271,0.104
+71,Pedrinho,Konyaspor,Attack,29.5,668.0,700000,0.17,0.102
+72,Enes Keskin,Alanyaspor,Midfield,25.1,748.0,350000,0.129,0.102
+73,Anıl Yiğit Çınar,Fatih Karagümrük,Defender,23.0,1100.0,500000,0.145,0.097
+74,Novatus Miroshi,Göztepe,Midfield,23.8,2616.0,5000000,0.499,0.088
+75,Ricardo Velho,Gençlerbirliği Spor Kulübü,Goalkeeper,27.9,2070.0,3000000,0.408,0.082
+76,Tom Dele-Bashiru,Gençlerbirliği Spor Kulübü,Midfield,26.8,2407.0,1800000,0.286,0.08
+77,Jérôme Onguéné,Eyüpspor,Defender,28.5,782.0,250000,0.112,0.077
+78,Abdullah Yiğiter,Antalyaspor,Goalkeeper,26.4,1260.0,250000,0.111,0.073
+79,Kartal Yılmaz,Beşiktaş Jimnastik Kulübü,Midfield,25.7,673.0,2500000,0.35,0.071
+80,Wilfred Ndidi,Beşiktaş Jimnastik Kulübü,Midfield,29.6,2512.0,8000000,0.553,0.062
+81,Halil Dervişoğlu,Caykur Rizespor,Attack,26.6,855.0,700000,0.163,0.062
+82,Kazımcan Karataş,Basaksehir FK,Defender,23.5,1139.0,2000000,0.303,0.06
+83,İrfan Can Eğribayat,Fenerbahce,Goalkeeper,28.0,810.0,1200000,0.207,0.058
+84,Jadel Katongo,Kayserispor,Defender,21.8,636.0,500000,0.12,0.058
+85,Baran Gezek,Eyüpspor,Midfield,20.9,1383.0,1500000,0.239,0.055
+86,Emir Ortakaya,Caykur Rizespor,Defender,22.0,773.0,600000,0.141,0.051
+87,Bedirhan Özyurt,Alanyaspor,Defender,23.3,908.0,200000,0.095,0.051
+88,Calegari,Eyüpspor,Defender,24.4,1620.0,2500000,0.344,0.049
+89,László Bénes,Kayserispor,Midfield,28.8,2581.0,2500000,0.344,0.044
+90,Arda Okan Kurtulan,Göztepe,Midfield,23.6,2439.0,7000000,0.522,0.04
+91,Samet Karakoç,Antalyaspor,Defender,23.7,595.0,500000,0.115,0.04
+92,Anthony Dennis,Göztepe,Midfield,22.0,2474.0,8000000,0.543,0.035
+93,Zafer Görgen,Gaziantep FK,Goalkeeper,26.0,1800.0,800000,0.164,0.033
+94,Umut Güneş,Basaksehir FK,Midfield,26.3,2098.0,3000000,0.362,0.029
+95,Hrvoje Smolcic,Kocaelispor,Defender,25.9,2229.0,2000000,0.287,0.029
+96,Muhammed Kadıoğlu,Fatih Karagümrük,Defender,19.5,589.0,200000,0.084,0.024
+97,Roland Sallai,Galatasaray,Defender,29.1,3254.0,14000000,0.555,0.018
+98,Kubilay Kanatsızkuş,Kasimpasa,Attack,29.3,601.0,400000,0.097,0.018
+99,Altin Zeqiri,Caykur Rizespor,Attack,26.0,689.0,1000000,0.167,0.015
+100,Jayden Oosterwolde,Fenerbahce,Defender,25.2,3706.0,20000000,0.573,0.015

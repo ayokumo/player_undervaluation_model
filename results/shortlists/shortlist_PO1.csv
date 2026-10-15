@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Cristian Devenish,Avs Futebol,Defender,25.4,2165.0,800000,0.528,0.525
+2,Diogo Calila,CD Santa Clara,Defender,27.7,1423.0,500000,0.42,0.508
+3,Javi Sánchez,FC Arouca,Defender,29.3,1317.0,800000,0.447,0.396
+4,José Gomes,CD Nacional,Defender,30.0,2314.0,1000000,0.495,0.381
+5,Zé Carlos,Gil Vicente FC,Defender,27.9,2466.0,2000000,0.561,0.373
+6,Léo Santos,CD Nacional,Defender,27.6,2719.0,1000000,0.48,0.371
+7,João Goulart,Casa Pia AC,Defender,26.4,1914.0,1500000,0.537,0.358
+8,Jefferson Encada,CF Estrela Amadora,Defender,28.2,1544.0,400000,0.274,0.354
+9,João Mendes,Vitória Guimarães SC,Defender,26.2,2710.0,2500000,0.567,0.349
+10,Paulo Vitor,Vitória Guimarães SC,Defender,25.0,1425.0,500000,0.307,0.339
+11,Paulo Victor,CD Santa Clara,Defender,25.2,1625.0,800000,0.399,0.336
+12,Zé Vítor,CD Nacional,Defender,25.4,2673.0,2500000,0.557,0.32
+13,Matheus Dias,CD Nacional,Midfield,24.2,2442.0,1500000,0.516,0.311
+14,Georgios Liavas,Rio Ave FC,Midfield,25.4,780.0,700000,0.344,0.308
+15,Jaume Grau,Avs Futebol,Midfield,29.2,1326.0,700000,0.343,0.305
+16,Sidney Lima,CD Santa Clara,Defender,29.5,3438.0,3500000,0.581,0.303
+17,Mateus Pivô,Avs Futebol,Defender,28.6,1149.0,300000,0.227,0.3
+18,José Fontán,FC Arouca,Defender,26.4,2545.0,1800000,0.532,0.295
+19,Lucas Soares,CD Santa Clara,Defender,28.2,2298.0,1500000,0.51,0.295
+20,Ferro,GD Estoril Praia,Defender,29.3,1634.0,1000000,0.431,0.281
+21,Toni Borevković,Vitória Guimarães SC,Defender,29.0,1225.0,2000000,0.533,0.273
+22,Nikolaos Athanasiou,Rio Ave FC,Defender,25.3,2172.0,1200000,0.451,0.267
+23,Espen van Ee,FC Arouca,Midfield,23.0,1935.0,1200000,0.448,0.26
+24,Gabriel Batista,CD Santa Clara,Goalkeeper,28.1,3510.0,4000000,0.566,0.252
+25,Rafael Brito,Casa Pia AC,Midfield,24.5,1520.0,600000,0.29,0.25
+26,Marios Vrousai,Rio Ave FC,Defender,28.0,2532.0,3000000,0.548,0.243
+27,Pedro Carvalho,GD Estoril Praia,Defender,23.4,1249.0,800000,0.334,0.24
+28,Bernardo Schappo,CF Estrela Amadora,Defender,27.3,2055.0,750000,0.314,0.237
+29,Rodrigo Conceição,CD Tondela,Defender,26.5,1431.0,500000,0.249,0.233
+30,Iyad Mohamed,Casa Pia AC,Midfield,25.3,1084.0,400000,0.219,0.232
+31,Pedro Ferreira,CD Santa Clara,Midfield,28.5,2205.0,3000000,0.544,0.227
+32,Nabil Touaizi,FC Alverca,Midfield,25.4,2849.0,800000,0.326,0.227
+33,Tunde Akinsola,Avs Futebol,Attack,23.3,2443.0,800000,0.325,0.224
+34,Garcia,FC Famalicão,Defender,24.5,566.0,1500000,0.453,0.219
+35,Daniel Rivas,Avs Futebol,Defender,24.6,1527.0,500000,0.244,0.217
+36,Óscar Rivas,Vitória Guimarães SC,Defender,26.3,1710.0,1000000,0.38,0.215
+37,Serginho,CD Santa Clara,Midfield,26.6,3045.0,3000000,0.542,0.214
+38,Gaizka Larrazabal,Casa Pia AC,Defender,28.6,2855.0,4000000,0.553,0.212
+39,Chiheb Labidi,CD Nacional,Midfield,25.1,1622.0,500000,0.237,0.21
+40,Pedro Amaral,GD Estoril Praia,Defender,28.9,1855.0,2000000,0.5,0.207
+41,Nor Maviram,CD Tondela,Defender,25.3,1458.0,400000,0.202,0.205
+42,João Tomé,Rio Ave FC,Defender,23.4,664.0,600000,0.264,0.204
+43,Vítor Carvalho,SC Braga,Midfield,29.1,1983.0,4000000,0.551,0.202
+44,Patrick Sequeira,Casa Pia AC,Goalkeeper,27.3,2528.0,3500000,0.543,0.197
+45,Boris Popović,FC Arouca,Defender,26.4,1158.0,1000000,0.365,0.195
+46,Dinis Pinto,Moreirense FC,Defender,25.9,2013.0,3000000,0.532,0.194
+47,Miguel Nóbrega,Vitória Guimarães SC,Defender,26.2,1149.0,400000,0.197,0.192
+48,Tamás Nikitscher,Rio Ave FC,Midfield,26.7,1377.0,800000,0.307,0.19
+49,Matías Rocha,FC Arouca,Defender,25.4,843.0,400000,0.196,0.189
+50,Tom van de Looi,FC Famalicão,Midfield,27.0,2753.0,5000000,0.559,0.187
+51,Pedro Santos,FC Arouca,Midfield,25.7,766.0,600000,0.257,0.187
+52,Yaya Sithole,CD Tondela,Midfield,27.3,1891.0,600000,0.255,0.184
+53,Tiago Manso,CD Tondela,Defender,26.6,1625.0,900000,0.32,0.18
+54,David Sousa,Casa Pia AC,Defender,25.0,2265.0,1000000,0.342,0.169
+55,Benny,Moreirense FC,Midfield,28.6,891.0,800000,0.292,0.167
+56,Gustavo Mendonça,Avs Futebol,Midfield,23.3,1401.0,500000,0.223,0.164
+57,MT,CD Santa Clara,Defender,25.3,1130.0,3500000,0.529,0.161
+58,Maga,Vitória Guimarães SC,Defender,23.6,1576.0,1500000,0.419,0.159
+59,Andreas Ntoi,Rio Ave FC,Defender,23.4,2347.0,5000000,0.552,0.157
+60,Paulo Moreira,CF Estrela Amadora,Midfield,26.4,2379.0,1500000,0.415,0.156
+61,Guilherme Romão,CD Santa Clara,Defender,28.7,890.0,400000,0.185,0.156
+62,Jordan Holsgrove,GD Estoril Praia,Midfield,26.8,2835.0,5000000,0.552,0.154
+63,Abdu Conté,Casa Pia AC,Defender,28.3,1429.0,700000,0.257,0.149
+64,Lenny Vallier,CD Nacional,Defender,27.2,751.0,500000,0.211,0.144
+65,Kaly,Casa Pia AC,Defender,22.6,992.0,400000,0.18,0.142
+66,Gustaf Lagerbielke,SC Braga,Defender,26.2,4509.0,10000000,0.6,0.142
+67,Cícero,CD Tondela,Midfield,29.2,1203.0,500000,0.211,0.141
+68,Sikou Niakaté,SC Braga,Defender,27.0,1903.0,6000000,0.559,0.139
+69,Justin de Haas,FC Famalicão,Defender,26.4,2790.0,7000000,0.567,0.134
+70,Hevertton,Gil Vicente FC,Defender,25.4,865.0,800000,0.276,0.134
+71,Álvaro Martínez,Moreirense FC,Defender,24.2,812.0,400000,0.178,0.132
+72,Max Scholze,CF Estrela Amadora,Defender,21.2,819.0,400000,0.174,0.129
+73,Lazar Carević,FC Famalicão,Goalkeeper,27.3,3060.0,5000000,0.545,0.127
+74,Víctor Gómez,SC Braga,Defender,26.3,4127.0,10000000,0.586,0.126
+75,Gonçalo Costa,GD Estoril Praia,Defender,26.4,561.0,600000,0.228,0.124
+76,Benjamin Kimpioka,CD Tondela,Attack,26.4,525.0,400000,0.173,0.123
+77,Zé Carlos,Gil Vicente FC,Midfield,24.7,1198.0,800000,0.268,0.121
+78,Ole Pohlmann,Rio Ave FC,Midfield,25.3,1731.0,1500000,0.391,0.119
+79,Jandro Orellana,GD Estoril Praia,Midfield,25.9,1316.0,1000000,0.314,0.116
+80,Francisco Moura,FC Porto,Defender,26.9,1764.0,9000000,0.571,0.113
+81,Vinícius Lopes,CD Santa Clara,Attack,27.2,2047.0,2500000,0.455,0.111
+82,Gil Dias,FC Famalicão,Attack,29.8,2507.0,2000000,0.438,0.111
+83,Paulinho Bóia,CD Nacional,Attack,28.0,2826.0,1200000,0.337,0.111
+84,Gustavo Klismahn,CD Santa Clara,Midfield,26.6,1110.0,500000,0.195,0.108
+85,Tiago Hernández,Avs Futebol,Midfield,24.2,562.0,300000,0.151,0.108
+86,Felix Bacher,GD Estoril Praia,Defender,25.7,3060.0,6000000,0.55,0.103
+87,Ángel Algobia,Avs Futebol,Midfield,27.0,1081.0,500000,0.193,0.101
+88,Kévin Boma,GD Estoril Praia,Defender,23.6,1722.0,6000000,0.549,0.099
+89,João Silva,CD Tondela,Defender,27.5,996.0,1500000,0.373,0.099
+90,Kevin Höög Jansson,CF Estrela Amadora,Midfield,25.8,814.0,400000,0.165,0.096
+91,Gilberto Batista,Moreirense FC,Defender,22.5,1933.0,1500000,0.372,0.096
+92,Rodrigo Pinheiro,FC Famalicão,Defender,23.9,2572.0,5000000,0.535,0.094
+93,Nelson Abbey,Rio Ave FC,Defender,22.9,2091.0,1500000,0.371,0.093
+94,Omar Richards,Rio Ave FC,Defender,28.4,702.0,2000000,0.42,0.091
+95,Amadou Dante,FC Arouca,Defender,25.7,1012.0,1200000,0.329,0.091
+96,Omar Fayed,FC Arouca,Defender,23.0,553.0,600000,0.213,0.091
+97,Sabit Abdulai,FC Alverca,Midfield,27.2,1233.0,700000,0.231,0.089
+98,Henrique Silva,CD Santa Clara,Defender,20.7,1045.0,500000,0.185,0.088
+99,Enzo Barrenechea,SL Benfica,Midfield,25.1,2835.0,12000000,0.574,0.086
+100,Isaac James,FC Alverca,Defender,21.9,1305.0,600000,0.211,0.084

@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Nathan Rôdes,FCV Dender EH,Midfield,28.6,1983.0,600000,0.471,0.697
+2,Kobe Cools,FCV Dender EH,Defender,28.9,1325.0,600000,0.465,0.673
+3,Óscar Gil,Oud-Heverlee Leuven,Defender,28.2,2325.0,800000,0.457,0.591
+4,Fabio Ferraro,FCV Dender EH,Defender,23.8,2532.0,1200000,0.5,0.579
+5,Bryan Goncalves,FCV Dender EH,Defender,30.0,2113.0,500000,0.376,0.546
+6,Enric Llansana,RSC Anderlecht,Midfield,25.2,2254.0,2000000,0.573,0.541
+7,Roman Kvet,FCV Dender EH,Midfield,28.6,2551.0,1200000,0.47,0.524
+8,Tommy St. Jago,KV Mechelen,Defender,26.5,2283.0,2000000,0.556,0.5
+9,Takahiro Akimoto,Oud-Heverlee Leuven,Defender,28.4,2710.0,1500000,0.484,0.485
+10,Abdoulaye Sissako,Sint-Truidense VV,Midfield,28.1,3350.0,2000000,0.521,0.445
+11,Ewoud Pletinckx,Oud-Heverlee Leuven,Defender,25.7,3538.0,1800000,0.486,0.43
+12,Takuma Ominami,Oud-Heverlee Leuven,Defender,28.6,1706.0,1000000,0.383,0.43
+13,Lucas Hey,RSC Anderlecht,Defender,23.2,3084.0,2500000,0.563,0.406
+14,Malcolm Viltard,FCV Dender EH,Midfield,23.7,2569.0,1500000,0.429,0.396
+15,Mardochée Nzita,Royal Charleroi Sporting Club,Defender,26.4,3198.0,1500000,0.428,0.392
+16,Christiaan Ravych,Cercle Brugge,Defender,23.9,2243.0,2500000,0.548,0.382
+17,Youssef Maziz,Oud-Heverlee Leuven,Midfield,28.0,2097.0,1000000,0.368,0.378
+18,Siebe Schrijvers,Oud-Heverlee Leuven,Midfield,30.0,2118.0,1500000,0.408,0.368
+19,Aiham Ousou,Royal Charleroi Sporting Club,Defender,26.5,3605.0,3000000,0.575,0.366
+20,Gary Magnée,Cercle Brugge,Defender,26.7,2890.0,2200000,0.513,0.363
+21,Luc Marijnissen,FCV Dender EH,Defender,23.5,3060.0,1500000,0.396,0.334
+22,Lawrence Agyekum,Cercle Brugge,Midfield,22.6,1887.0,1500000,0.394,0.327
+23,Maxence Maisonneuve,RAAL La Louvière,Defender,27.4,2295.0,600000,0.292,0.327
+24,Michael Verrips,FCV Dender EH,Goalkeeper,29.6,900.0,450000,0.268,0.325
+25,Killian Sardella,RSC Anderlecht,Defender,24.2,2038.0,2500000,0.517,0.324
+26,Joedrick Pupe,Sint-Truidense VV,Defender,29.1,791.0,1300000,0.377,0.32
+27,Daam Foulon,Royal Antwerp FC,Defender,27.3,2290.0,2000000,0.462,0.305
+28,Ortwin De Wolf,KV Mechelen,Goalkeeper,29.2,675.0,500000,0.267,0.303
+29,Moussa Diarra,RSC Anderlecht,Defender,25.7,1370.0,2000000,0.46,0.301
+30,Robert-Jan Vanwesemael,Sint-Truidense VV,Defender,24.3,3075.0,3000000,0.548,0.301
+31,Ibrahim Diakité,Cercle Brugge,Defender,22.7,858.0,1000000,0.33,0.296
+32,Thierry Lutonda,RAAL La Louvière,Defender,25.7,1730.0,600000,0.276,0.289
+33,Thibo Somers,Royal Antwerp FC,Midfield,27.3,2434.0,3000000,0.539,0.288
+34,Patrick Pflücke,KV Mechelen,Midfield,29.6,2649.0,1800000,0.398,0.286
+35,Bryan Reynolds,KVC Westerlo,Defender,25.0,3494.0,3500000,0.568,0.284
+36,Yuto Tsunashima,Royal Antwerp FC,Defender,25.9,2727.0,1500000,0.377,0.279
+37,Benoît Nyssen,Zulte Waregem,Defender,28.8,1742.0,600000,0.27,0.279
+38,David Hrncar,FCV Dender EH,Midfield,28.6,817.0,500000,0.245,0.262
+39,Antoine Bernier,Royal Charleroi Sporting Club,Attack,28.8,2524.0,1500000,0.372,0.262
+40,Aurélien Scheidler,Royal Charleroi Sporting Club,Attack,28.1,3267.0,2000000,0.42,0.26
+41,Jakob Kiilerich,Zulte Waregem,Defender,26.2,2293.0,1000000,0.32,0.259
+42,Siebe Van der Heyden,KAA Gent,Defender,28.1,2955.0,3000000,0.52,0.253
+43,Kiki Kouyaté,Royal Antwerp FC,Defender,29.2,1183.0,1500000,0.365,0.245
+44,Brent Gabriël,Zulte Waregem,Goalkeeper,27.4,3240.0,1000000,0.31,0.245
+45,Sami Lahssaini,RAAL La Louvière,Midfield,27.8,2770.0,700000,0.274,0.245
+46,Louis Patris,Union Saint-Gilloise,Defender,25.1,1584.0,2500000,0.473,0.238
+47,Jérémy Petris,Royal Charleroi Sporting Club,Defender,28.4,676.0,2000000,0.402,0.236
+48,Oluwaseun Adewumi,Cercle Brugge,Midfield,21.4,1585.0,800000,0.28,0.235
+49,Dennis Eckert Ayensa,Standard Liège,Attack,29.5,1986.0,2000000,0.399,0.229
+50,Rein Van Helden,Royal Antwerp FC,Defender,24.0,2121.0,3000000,0.505,0.223
+51,Tiago Araújo,KAA Gent,Defender,25.3,2694.0,2500000,0.469,0.221
+52,Yllan Okou,RAAL La Louvière,Defender,23.5,2710.0,2000000,0.396,0.219
+53,Fredrik Hammar,KV Mechelen,Midfield,25.4,3366.0,3000000,0.503,0.219
+54,Fedde Leysen,Union Saint-Gilloise,Defender,23.0,2347.0,3500000,0.53,0.216
+55,Yannick Cappelle,Zulte Waregem,Defender,23.0,2016.0,650000,0.255,0.214
+56,José Marsà,KV Mechelen,Defender,24.3,2595.0,3500000,0.528,0.212
+57,Check Keita,Royal Charleroi Sporting Club,Defender,23.3,3651.0,3500000,0.527,0.209
+58,Joël Ito,RAAL La Louvière,Midfield,28.3,2340.0,900000,0.276,0.202
+59,Maxime Delanghe,Cercle Brugge,Goalkeeper,25.1,1591.0,1500000,0.342,0.193
+60,Laurent Lemoine,Zulte Waregem,Defender,28.2,1671.0,800000,0.266,0.193
+61,Djibril Lamego,RAAL La Louvière,Defender,23.4,2553.0,1500000,0.337,0.19
+62,Atsuki Ito,KAA Gent,Midfield,27.9,2112.0,2500000,0.447,0.183
+63,Étienne Camara,Royal Charleroi Sporting Club,Midfield,23.3,3226.0,4000000,0.549,0.182
+64,Wilguens Paugain,Zulte Waregem,Defender,24.9,1280.0,800000,0.259,0.18
+65,Jean-Kévin Duverne,KAA Gent,Defender,29.0,1326.0,2000000,0.38,0.178
+66,Luc De Fougerolles,FCV Dender EH,Defender,20.7,1906.0,1000000,0.277,0.176
+67,Anton Tanghe,Zulte Waregem,Defender,27.4,1664.0,700000,0.24,0.176
+68,Mathias Rasmussen,Union Saint-Gilloise,Midfield,28.6,1687.0,2000000,0.38,0.175
+69,Jordi Liongola,RAAL La Louvière,Midfield,26.1,2618.0,1500000,0.33,0.17
+70,Ross Sykes,Union Saint-Gilloise,Defender,27.3,3006.0,4500000,0.568,0.17
+71,Chukwubuikem Ikwuemesi,Oud-Heverlee Leuven,Attack,24.9,1820.0,1200000,0.297,0.168
+72,Marlon Fossey,Standard Liège,Defender,27.8,1469.0,3500000,0.506,0.164
+73,Thomas Van den Keybus,KVC Westerlo,Midfield,25.2,1119.0,700000,0.232,0.163
+74,Ibe Hautekiet,Standard Liège,Defender,24.2,2947.0,4000000,0.536,0.158
+75,Emin Bayram,KVC Westerlo,Defender,23.3,3322.0,4000000,0.532,0.154
+76,Nayel Mehssatou,Standard Liège,Midfield,24.2,1043.0,1500000,0.326,0.149
+77,Luis Vázquez,RSC Anderlecht,Attack,25.2,2047.0,2500000,0.414,0.146
+78,David Bates,Standard Liège,Defender,29.7,1380.0,1800000,0.348,0.146
+79,Darío Benavides,RAAL La Louvière,Defender,23.5,968.0,400000,0.185,0.142
+80,Mujaid Sadick,KRC Genk,Defender,26.3,4047.0,5000000,0.568,0.137
+81,Josué Homawoo,Standard Liège,Defender,28.6,2183.0,2000000,0.367,0.13
+82,Lukas Willen,Zulte Waregem,Defender,23.2,1441.0,600000,0.202,0.128
+83,Jules Gaudin,Royal Charleroi Sporting Club,Defender,26.2,635.0,500000,0.188,0.128
+84,Ilias Sebaoui,Sint-Truidense VV,Attack,24.8,3277.0,3500000,0.488,0.127
+85,Mohamed Berte,FCV Dender EH,Attack,24.3,951.0,650000,0.206,0.125
+86,Henry Lawrence,Standard Liège,Defender,24.8,2433.0,4000000,0.519,0.123
+87,Leo Kokubo,Sint-Truidense VV,Goalkeeper,25.4,3420.0,5000000,0.56,0.12
+88,Enrique Lofolomo,Zulte Waregem,Midfield,26.2,1310.0,1000000,0.247,0.118
+89,Kyan Vaesen,Oud-Heverlee Leuven,Attack,25.2,825.0,700000,0.208,0.118
+90,Lewin Blum,Royal Charleroi Sporting Club,Defender,24.9,1788.0,2000000,0.362,0.116
+91,Doğucan Haspolat,KVC Westerlo,Midfield,26.4,3394.0,5000000,0.559,0.116
+92,Loïc Mbe Soh,Sint-Truidense VV,Defender,25.1,915.0,2000000,0.361,0.11
+93,Samuel Gueulette,RAAL La Louvière,Midfield,26.1,1261.0,500000,0.183,0.108
+94,Charles Vanhoutte,Union Saint-Gilloise,Midfield,27.8,2769.0,7000000,0.589,0.108
+95,Zeno Van Den Bosch,Royal Antwerp FC,Defender,23.0,3071.0,6000000,0.57,0.108
+96,Emmanuel Kakou,Cercle Brugge,Defender,21.0,1733.0,2000000,0.358,0.106
+97,Nordin Jackers,Club Brugge KV,Goalkeeper,28.8,2322.0,1200000,0.269,0.106
+98,Ken Nkuba,KRC Genk,Defender,24.5,860.0,1500000,0.304,0.104
+99,Amando Lapage,KVC Westerlo,Defender,21.7,1266.0,800000,0.215,0.104
+100,Ibrahim Karamoko,Standard Liège,Defender,25.0,2177.0,3000000,0.444,0.103

@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Panagiotis Deligiannidis,Athlitiki Enosi Larisas,Defender,29.9,1431.0,450000,0.352,0.467
+2,Dimitrios Tsakmakis,APS Atromitos Athinon,Defender,26.9,1117.0,300000,0.229,0.452
+3,Dimitrios Stavropoulos,APS Atromitos Athinon,Defender,29.2,2654.0,600000,0.412,0.398
+4,Ilias Chatzitheodoridis,Omilos Filathlon Irakliou FC,Defender,28.7,1474.0,500000,0.37,0.391
+5,Carles Soria,Volou Neos Podosferikos Syllogos,Defender,29.7,1830.0,450000,0.272,0.376
+6,Dani Fernández,A.G.S Asteras Tripolis,Defender,29.2,1767.0,700000,0.427,0.365
+7,Georgios Manthatis,APO Levadiakos Football Club,Defender,29.2,682.0,350000,0.211,0.353
+8,Christos Sielis,Panetolikos Agrinio,Defender,26.4,1920.0,700000,0.413,0.35
+9,Angelos Liasos,Panserraikos Serres,Midfield,26.1,1236.0,300000,0.187,0.33
+10,Christian Manrique,Panetolikos Agrinio,Defender,27.8,1975.0,450000,0.246,0.325
+11,Nikola Stajic,Panetolikos Agrinio,Defender,24.8,965.0,400000,0.216,0.322
+12,Theocharis Iliadis,Athlitiki Enosi Larisas,Defender,29.8,945.0,350000,0.198,0.312
+13,Enis Cokaj,APO Levadiakos Football Club,Midfield,27.4,2506.0,1000000,0.467,0.289
+14,Konstantinos Pomonis,A.G.S Asteras Tripolis,Defender,24.1,1069.0,175000,0.136,0.269
+15,Athanasios Triantafyllou,Volou Neos Podosferikos Syllogos,Defender,23.0,620.0,250000,0.145,0.266
+16,Mattheos Mountes,APS Atromitos Athinon,Defender,22.6,1799.0,600000,0.297,0.266
+17,Joel Abu Hanna,APO Levadiakos Football Club,Defender,28.5,1044.0,350000,0.183,0.266
+18,Giannis Bouzoukis,Volou Neos Podosferikos Syllogos,Midfield,28.3,1193.0,450000,0.223,0.264
+19,Marios Vichos,APO Levadiakos Football Club,Defender,26.5,2896.0,1000000,0.433,0.259
+20,Vangelis Nikolaou,Panetolikos Agrinio,Midfield,22.1,690.0,300000,0.157,0.249
+21,Oluwatobiloba Alagbe,A.G.S Asteras Tripolis,Midfield,26.2,1059.0,600000,0.287,0.246
+22,Samuel Moutoussamy,APS Atromitos Athinon,Midfield,29.9,2411.0,1200000,0.455,0.236
+23,Luciano Maidana,Athlitiki Enosi Kifisias,Defender,24.1,917.0,150000,0.119,0.231
+24,Facundo Pérez,Athlitiki Enosi Larisas,Midfield,26.9,1571.0,600000,0.266,0.231
+25,Ahmed Touba,Panathinaikos Athlitikos Omilos,Defender,28.3,3245.0,2500000,0.565,0.213
+26,Athanasios Androutsos,Omilos Filathlon Irakliou FC,Midfield,29.2,2658.0,700000,0.291,0.208
+27,Panagiotis Liagas,APO Levadiakos Football Club,Defender,26.7,1961.0,1000000,0.402,0.208
+28,Athanasios Karamanis,APS Atromitos Athinon,Midfield,22.7,916.0,350000,0.159,0.206
+29,Timipere Johnson Eboh,Athlitiki Enosi Kifisias,Midfield,24.0,1832.0,600000,0.252,0.206
+30,Álvaro Tejero,Aris Thessalonikis,Defender,30.0,2427.0,1800000,0.521,0.203
+31,Joan Sastre,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,Defender,29.2,789.0,800000,0.316,0.195
+32,Giannis Doiranlis,Panserraikos Serres,Midfield,23.8,1024.0,400000,0.174,0.195
+33,Konstantinos Apostolakis,Athlitiki Enosi Larisas,Defender,27.1,699.0,125000,0.11,0.193
+34,Lefteris Lyratzis,Panserraikos Serres,Defender,26.4,1968.0,800000,0.316,0.19
+35,Triantafyllos Tsapras,APO Levadiakos Football Club,Defender,24.7,2764.0,1500000,0.462,0.19
+36,James Penrice,Athlitiki Enosi Konstantinoupoleos,Defender,27.5,1523.0,2500000,0.547,0.183
+37,Nikolaos Christogeorgos,Omilos Filathlon Irakliou FC,Goalkeeper,26.5,2183.0,1000000,0.388,0.183
+38,Georgios Katris,APO Levadiakos Football Club,Defender,20.7,1382.0,500000,0.221,0.178
+39,Iva Gelashvili,Panserraikos Serres,Defender,25.2,1506.0,500000,0.219,0.173
+40,Volnei,Panserraikos Serres,Defender,26.2,1534.0,450000,0.192,0.173
+41,Theocharis Tsingaras,APS Atromitos Athinon,Midfield,25.9,1990.0,900000,0.327,0.173
+42,Ismahila Ouédraogo,APS Atromitos Athinon,Midfield,26.7,1934.0,1200000,0.405,0.17
+43,Zisis Chatzistravos,Athlitiki Enosi Larisas,Midfield,26.6,650.0,400000,0.164,0.17
+44,Georgios Papadopoulos,APS Atromitos Athinon,Defender,23.7,614.0,250000,0.117,0.17
+45,Lazar Kojic,Panetolikos Agrinio,Midfield,26.6,2092.0,450000,0.192,0.168
+46,Jakub Pokorny,Athlitiki Enosi Kifisias,Defender,29.8,1865.0,600000,0.238,0.165
+47,Ahmed Ouattara Kossonou,Athlitiki Enosi Larisas,Defender,22.7,1012.0,450000,0.187,0.162
+48,Gustav Granath,Panetolikos Agrinio,Defender,29.4,824.0,400000,0.154,0.15
+49,Eder González,A.G.S Asteras Tripolis,Midfield,29.5,1026.0,700000,0.25,0.147
+50,Taxiarchis Filon,APO Levadiakos Football Club,Defender,21.3,743.0,400000,0.152,0.145
+51,Francisco Tinaglini,Panserraikos Serres,Goalkeeper,27.7,1959.0,400000,0.149,0.14
+52,Goni Naor,Athlitiki Enosi Larisas,Midfield,27.2,916.0,350000,0.135,0.14
+53,Noah Fadiga,Aris Thessalonikis,Defender,26.6,2011.0,2000000,0.476,0.135
+54,Marios Tsaousis,Panserraikos Serres,Defender,26.2,1845.0,500000,0.204,0.132
+55,Bruno Onyemaechi,Olympiakos Syndesmos Filathlon Peiraios,Defender,27.3,1802.0,2500000,0.49,0.127
+56,Leroy Abanda,Volou Neos Podosferikos Syllogos,Defender,26.1,781.0,450000,0.176,0.122
+57,Vasilios Sourlis,Athlitiki Enosi Larisas,Midfield,23.6,965.0,400000,0.143,0.119
+58,Miguel Luís,Panetolikos Agrinio,Midfield,27.4,553.0,350000,0.13,0.119
+59,Pedro Álvaro,Aris Thessalonikis,Defender,26.3,1620.0,2000000,0.453,0.114
+60,David Galiatsos,Panetolikos Agrinio,Defender,20.4,645.0,200000,0.105,0.114
+61,Lazaros Rota,Athlitiki Enosi Konstantinoupoleos,Defender,28.9,2797.0,4500000,0.563,0.112
+62,Georgios Agapakis,Panetolikos Agrinio,Defender,24.6,498.0,75000,0.091,0.112
+63,Giannis Kosti,APO Levadiakos Football Club,Midfield,26.3,2422.0,1200000,0.352,0.109
+64,Pepe Castaño,A.G.S Asteras Tripolis,Defender,27.6,968.0,600000,0.219,0.109
+65,Erik Palmer-Brown,Panathinaikos Athlitikos Omilos,Defender,29.2,2365.0,1500000,0.393,0.104
+66,Giannis Michailidis,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,Defender,26.4,3050.0,4000000,0.545,0.104
+67,Marios Siampanis,Volou Neos Podosferikos Syllogos,Goalkeeper,26.8,2340.0,700000,0.232,0.096
+68,Erick Ferigra,Athlitiki Enosi Larisas,Defender,27.4,1243.0,450000,0.168,0.096
+69,Kresimir Krizmanic,Omilos Filathlon Irakliou FC,Defender,26.0,2693.0,1200000,0.32,0.094
+70,Uros Racic,Aris Thessalonikis,Midfield,28.3,2375.0,3000000,0.489,0.089
+71,Vasilios Xenopoulos,Athlitiki Enosi Kifisias,Goalkeeper,28.1,1020.0,300000,0.108,0.086
+72,Apostolos Apostolopoulos,Panetolikos Agrinio,Defender,23.6,752.0,450000,0.161,0.086
+73,Hamza Mendyl,Aris Thessalonikis,Defender,28.7,607.0,800000,0.248,0.084
+74,Lefteris Tasiouras,Volou Neos Podosferikos Syllogos,Defender,22.3,483.0,200000,0.097,0.084
+75,Alex Petkov,Athlitiki Enosi Kifisias,Defender,26.9,1254.0,600000,0.209,0.084
+76,Pedro Chirivella,Panathinaikos Athlitikos Omilos,Midfield,29.1,2571.0,5000000,0.558,0.076
+77,Jonjoe Kenny,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,Defender,29.3,3234.0,2500000,0.448,0.076
+78,Lamarana Jallow,APO Levadiakos Football Club,Midfield,24.3,504.0,300000,0.106,0.076
+79,Makana Baku,APS Atromitos Athinon,Attack,28.2,2460.0,800000,0.245,0.069
+80,Davide Calabria,Panathinaikos Athlitikos Omilos,Defender,29.6,2646.0,4500000,0.539,0.066
+81,Giannis Apostolakis,Omilos Filathlon Irakliou FC,Midfield,21.8,1915.0,1200000,0.301,0.063
+82,Denzel Jubitana,APS Atromitos Athinon,Attack,27.2,1873.0,600000,0.203,0.063
+83,Konstantinos Roukounakis,Athlitiki Enosi Kifisias,Midfield,25.0,591.0,200000,0.089,0.063
+84,Javi Hernández,Panathinaikos Athlitikos Omilos,Defender,28.2,725.0,2000000,0.408,0.058
+85,Yvann Maçon,Athlitiki Enosi Larisas,Defender,27.8,800.0,800000,0.237,0.053
+86,Giulian Biancone,Olympiakos Syndesmos Filathlon Peiraios,Defender,26.3,1429.0,2500000,0.426,0.051
+87,Alexios Kalogeropoulos,Olympiakos Syndesmos Filathlon Peiraios,Defender,21.9,668.0,1500000,0.326,0.048
+88,Harold Moukoudi,Athlitiki Enosi Konstantinoupoleos,Defender,28.6,2558.0,6000000,0.554,0.043
+89,Vasilios Grosdis,Volou Neos Podosferikos Syllogos,Midfield,24.5,899.0,300000,0.102,0.041
+90,Greg Taylor,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,Defender,28.7,1225.0,4000000,0.476,0.038
+91,Filipe Relvas,Athlitiki Enosi Konstantinoupoleos,Defender,26.8,2718.0,4500000,0.512,0.036
+92,Thiago Nuss,Omilos Filathlon Irakliou FC,Attack,25.4,2216.0,1500000,0.315,0.028
+93,Antonis Tsiftsis,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,Goalkeeper,27.0,2229.0,1200000,0.279,0.028
+94,Adam Gnezda Cerin,Panathinaikos Athlitikos Omilos,Midfield,27.0,2084.0,4500000,0.49,0.025
+95,Julián Chicco,A.G.S Asteras Tripolis,Midfield,28.5,487.0,450000,0.136,0.025
+96,Panagiotis Retsos,Olympiakos Syndesmos Filathlon Peiraios,Defender,27.9,2649.0,7000000,0.556,0.023
+97,Matías González,Volou Neos Podosferikos Syllogos,Midfield,24.4,489.0,250000,0.086,0.023
+98,Lucas Anacker,APO Levadiakos Football Club,Goalkeeper,29.8,552.0,300000,0.095,0.02
+99,Alban Lafont,Panathinaikos Athlitikos Omilos,Goalkeeper,27.4,2865.0,3000000,0.425,0.018
+100,Mady Camara,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,Midfield,29.3,1206.0,5000000,0.519,0.015

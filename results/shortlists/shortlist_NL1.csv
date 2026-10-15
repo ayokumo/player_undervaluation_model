@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Ivan Mesik,Heracles Almelo,Defender,25.1,2902.0,600000,0.539,0.73
+2,Mimeirhel Benita,Heracles Almelo,Defender,22.6,1534.0,500000,0.363,0.522
+3,Alec Van Hoorenbeeck,Heracles Almelo,Defender,27.5,2456.0,700000,0.425,0.512
+4,Sherel Floranus,PEC Zwolle,Defender,27.9,3251.0,800000,0.476,0.49
+5,Joris Kramer,Go Ahead Eagles,Defender,29.9,4155.0,1800000,0.592,0.483
+6,Daniel Bielica,NAC Breda,Goalkeeper,27.2,2970.0,800000,0.464,0.477
+7,Max Balard,NAC Breda,Midfield,25.6,2782.0,900000,0.49,0.471
+8,Jannes Wieckhoff,Heracles Almelo,Defender,25.9,900.0,350000,0.266,0.456
+9,Anselmo García MacNulty,PEC Zwolle,Defender,23.4,3025.0,1500000,0.543,0.448
+10,Mats Deijl,Feyenoord Rotterdam,Defender,29.0,3651.0,2000000,0.584,0.438
+11,Marco Rente,FC Groningen,Defender,29.4,2309.0,1300000,0.515,0.424
+12,Shawn Adewoye,Fortuna Sittardia Combinatie,Defender,26.0,2202.0,900000,0.444,0.421
+13,Fabian de Keijzer,Heracles Almelo,Goalkeeper,26.2,930.0,400000,0.263,0.411
+14,Simon Graves,PEC Zwolle,Defender,27.1,2771.0,1500000,0.525,0.401
+15,Boy Kemper,NAC Breda,Defender,27.0,2911.0,1000000,0.46,0.401
+16,Boyd Lucassen,NAC Breda,Defender,28.0,1153.0,350000,0.234,0.399
+17,Evert Linthorst,Go Ahead Eagles,Midfield,26.3,2206.0,1200000,0.488,0.399
+18,Sam Kersten,SC Heerenveen,Defender,28.4,2697.0,2000000,0.556,0.388
+19,Jan Zamburek,Heracles Almelo,Midfield,25.4,2002.0,400000,0.236,0.374
+20,Olivier Aertssen,PEC Zwolle,Defender,21.9,2026.0,650000,0.302,0.369
+21,Syb van Ottele,Fortuna Sittardia Combinatie,Defender,24.4,991.0,600000,0.286,0.367
+22,Rick Meissen,Excelsior Rotterdam,Defender,24.4,2513.0,800000,0.361,0.356
+23,Cherrion Valerius,NAC Breda,Defender,20.8,1924.0,650000,0.291,0.352
+24,Richonell Margaret,Go Ahead Eagles,Attack,25.8,1445.0,600000,0.264,0.341
+25,Ilias Bronkhorst,Excelsior Rotterdam,Defender,29.2,2406.0,700000,0.299,0.334
+26,Leo Greiml,NAC Breda,Defender,25.0,1180.0,900000,0.368,0.331
+27,Jasper Dahlhaus,Fortuna Sittardia Combinatie,Defender,24.6,2208.0,1400000,0.436,0.315
+28,Yassin Oukili,Fortuna Sittardia Combinatie,Midfield,25.5,930.0,700000,0.275,0.307
+29,Precious Ugwu,FC Volendam,Defender,20.4,2528.0,500000,0.23,0.307
+30,Mohamed Nassoh,NAC Breda,Midfield,23.4,1916.0,700000,0.274,0.304
+31,Guus Offerhaus,SC Telstar,Defender,25.5,3420.0,800000,0.328,0.299
+32,Dean James,Go Ahead Eagles,Defender,26.2,2563.0,1700000,0.488,0.294
+33,Siebe Horemans,FC Utrecht,Defender,28.1,2907.0,3000000,0.553,0.294
+34,Teo Quintero,Sparta Rotterdam,Defender,27.3,2649.0,1300000,0.397,0.29
+35,Vasilios Zagaritis,SC Heerenveen,Defender,25.2,3038.0,3000000,0.544,0.28
+36,Arno Verschueren,FC Twente Enschede,Midfield,29.2,706.0,700000,0.263,0.28
+37,Djevencio van der Kust,Heracles Almelo,Defender,25.2,1240.0,350000,0.195,0.275
+38,Aske Adelgaard,Go Ahead Eagles,Defender,22.7,1977.0,1000000,0.351,0.273
+39,Kamal Sowah,NAC Breda,Midfield,26.5,2863.0,750000,0.276,0.272
+40,Mike Eerdhuijzen,FC Utrecht,Defender,26.0,585.0,1300000,0.379,0.263
+41,Ozan Kökcü,FC Volendam,Midfield,27.9,1810.0,375000,0.192,0.245
+42,Rio Hillen,NAC Breda,Defender,23.3,2005.0,600000,0.217,0.24
+43,Brayann Pereira,NEC Nijmegen,Defender,23.1,1435.0,1000000,0.332,0.237
+44,Sem Scheperman,Heracles Almelo,Midfield,24.0,1124.0,600000,0.212,0.227
+45,Philippe Sandler,NEC Nijmegen,Defender,29.4,2123.0,2000000,0.47,0.223
+46,Thijs Oosting,PEC Zwolle,Midfield,26.2,2834.0,900000,0.293,0.22
+47,Adam Carlén,Excelsior Rotterdam,Midfield,26.0,1270.0,400000,0.189,0.216
+48,Zico Buurmeester,PEC Zwolle,Midfield,24.1,1746.0,1300000,0.342,0.206
+49,Yannick Leliendal,FC Volendam,Defender,24.2,2932.0,1000000,0.307,0.203
+50,Enes Mahmutovic,NAC Breda,Defender,29.1,779.0,250000,0.164,0.203
+51,Thijmen Blokzijl,FC Groningen,Defender,21.4,3137.0,4000000,0.542,0.203
+52,Tyrese Noslin,SC Telstar,Midfield,23.8,2645.0,750000,0.235,0.198
+53,Nick Verschuren,FC Volendam,Defender,21.5,3066.0,1000000,0.304,0.196
+54,Neville Ogidi Nwankwo,SC Telstar,Defender,23.7,2564.0,800000,0.26,0.191
+55,Thomas Ouwejan,NEC Nijmegen,Defender,29.8,607.0,700000,0.218,0.19
+56,Oliver Braude,SC Heerenveen,Defender,22.4,3170.0,5000000,0.555,0.18
+57,Devon Koswal,SC Telstar,Defender,22.9,1818.0,450000,0.186,0.18
+58,Anton Gaaei,Ajax Amsterdam,Defender,23.6,2390.0,5000000,0.554,0.176
+59,Julian Baas,Sparta Rotterdam,Midfield,24.2,1477.0,700000,0.212,0.169
+60,Luuk Brouwers,SC Heerenveen,Midfield,28.2,2197.0,1500000,0.348,0.166
+61,Nils Rossen,SC Telstar,Midfield,21.9,2755.0,700000,0.211,0.166
+62,Marvin Young,Sparta Rotterdam,Defender,20.8,3150.0,5000000,0.546,0.163
+63,Lucas Rosa,Ajax Amsterdam,Defender,26.3,2499.0,5000000,0.545,0.159
+64,Jari De Busser,Go Ahead Eagles,Goalkeeper,26.7,4200.0,4000000,0.524,0.156
+65,Nick Fichtinger,PEC Zwolle,Midfield,22.2,858.0,350000,0.161,0.154
+66,Nikolai Hopland,SC Heerenveen,Defender,21.9,544.0,1500000,0.339,0.153
+67,Charles-Andreas Brym,NAC Breda,Attack,27.9,1529.0,350000,0.16,0.151
+68,Jochem Ritmeester van de Kamp,SC Telstar,Midfield,22.7,2395.0,1500000,0.334,0.149
+69,Rome-Jayden Owusu-Oduro,AZ Alkmaar,Goalkeeper,22.0,2712.0,6000000,0.556,0.148
+70,Tobias Lauritsen,Sparta Rotterdam,Attack,28.8,3178.0,3500000,0.498,0.144
+71,Mitchell van Bergen,Sparta Rotterdam,Attack,26.9,2557.0,1500000,0.329,0.136
+72,Déron Payne,FC Volendam,Defender,23.8,1028.0,350000,0.15,0.134
+73,Melle Meulensteen,Go Ahead Eagles,Midfield,27.0,3807.0,2500000,0.421,0.131
+74,Wouter Prins,FC Groningen,Defender,22.4,475.0,450000,0.167,0.129
+75,Stijn van Gassel,Excelsior Rotterdam,Goalkeeper,29.7,2820.0,1000000,0.262,0.126
+76,Casper Widell,Excelsior Rotterdam,Defender,23.2,3160.0,1500000,0.323,0.122
+77,Jorg Schreuders,FC Groningen,Attack,21.8,2920.0,1700000,0.345,0.122
+78,Joshua Kitolano,Sparta Rotterdam,Midfield,24.9,2636.0,2500000,0.413,0.121
+79,Alex Plat,FC Volendam,Midfield,28.4,844.0,300000,0.129,0.121
+80,Matisse Didden,FC Utrecht,Defender,24.7,2260.0,3000000,0.447,0.119
+81,Max Bruns,FC Twente Enschede,Defender,23.7,837.0,1500000,0.321,0.119
+82,Giovanni van Zwam,Go Ahead Eagles,Defender,22.5,1132.0,300000,0.128,0.117
+83,Niklas Vesterlund,FC Utrecht,Defender,27.1,1676.0,1500000,0.32,0.116
+84,Mees de Wit,AZ Alkmaar,Defender,28.2,3381.0,6000000,0.542,0.111
+85,Dani de Wit,FC Utrecht,Midfield,28.4,2852.0,3500000,0.475,0.111
+86,Nordin Bukala,FC Volendam,Midfield,20.8,1990.0,600000,0.179,0.109
+87,Alexandre Penetra,AZ Alkmaar,Defender,24.8,3789.0,10000000,0.599,0.109
+88,Shurandy Sambo,Sparta Rotterdam,Defender,24.9,1755.0,1300000,0.274,0.109
+89,Mathias Kjølø,FC Twente Enschede,Midfield,25.0,619.0,1000000,0.243,0.109
+90,Luka Kulenovic,Heracles Almelo,Attack,26.8,1925.0,650000,0.189,0.107
+91,Dirk Proper,NEC Nijmegen,Midfield,24.4,1368.0,1500000,0.305,0.102
+92,Mathis Suray,Go Ahead Eagles,Attack,24.9,3659.0,3500000,0.451,0.094
+93,Bart van Rooij,FC Twente Enschede,Defender,25.1,3308.0,10000000,0.583,0.092
+94,Mike Kleijn,Sparta Rotterdam,Defender,21.4,570.0,300000,0.109,0.091
+95,Ramiz Zerrouki,FC Twente Enschede,Midfield,28.1,3153.0,6500000,0.539,0.089
+96,Peer Koopmeiners,AZ Alkmaar,Midfield,26.2,3093.0,12000000,0.603,0.086
+97,Ko Itakura,Ajax Amsterdam,Defender,29.4,2009.0,8000000,0.558,0.084
+98,Hristiyan Petrov,SC Heerenveen,Defender,24.0,643.0,500000,0.163,0.082
+99,Thom van Bergen,FC Groningen,Attack,22.5,3056.0,3000000,0.412,0.079
+100,Edouard Michut,Fortuna Sittardia Combinatie,Midfield,23.3,1653.0,1200000,0.243,0.077

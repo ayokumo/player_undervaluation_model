@@ -1,0 +1,101 @@
+rank,player_name,club_name,position,age,minutes_365,market_value_eur,p_success,score
+1,Brad Lyons,Kilmarnock FC,Midfield,29.1,2078.0,350000,0.44,0.582
+2,Liam Henderson,Falkirk FC,Defender,29.9,3099.0,150000,0.247,0.515
+3,Robbie Deas,Kilmarnock FC,Defender,26.4,2761.0,500000,0.53,0.505
+4,Danny Finlayson,Livingston FC,Defender,25.5,2872.0,200000,0.262,0.5
+5,Miguel Freckleton,St. Mirren FC,Defender,22.9,3330.0,200000,0.235,0.445
+6,Yevgeniy Kucherenko,Dundee United FC,Goalkeeper,26.9,2460.0,400000,0.36,0.423
+7,Krisztián Keresztes,Dundee United FC,Defender,26.5,3168.0,350000,0.312,0.413
+8,James Brown,Kilmarnock FC,Defender,28.1,1206.0,200000,0.217,0.41
+9,Warren O'Hora,Hibernian FC,Defender,27.2,2743.0,550000,0.491,0.408
+10,Chris Cadden,Hibernian FC,Defender,29.8,1629.0,500000,0.412,0.405
+11,Lewis Mayo,Kilmarnock FC,Defender,26.3,1846.0,600000,0.507,0.388
+12,Vicko Sevelj,Dundee United FC,Midfield,25.8,2744.0,650000,0.523,0.376
+13,Ryan Strain,Dundee United FC,Defender,29.3,1115.0,450000,0.344,0.363
+14,Leon McCann,Falkirk FC,Defender,26.3,2385.0,200000,0.202,0.356
+15,Ryan Astley,Dundee FC,Defender,24.8,2824.0,600000,0.429,0.338
+16,Dominic Thompson,Kilmarnock FC,Defender,25.9,2333.0,400000,0.296,0.323
+17,Tom Sparrow,Motherwell FC,Midfield,23.6,1320.0,100000,0.135,0.316
+18,Richard King,St. Mirren FC,Defender,24.6,1987.0,250000,0.205,0.313
+19,Shamal George,St. Mirren FC,Goalkeeper,28.5,3218.0,300000,0.224,0.313
+20,Jon McCracken,Dundee FC,Goalkeeper,26.1,3180.0,500000,0.339,0.311
+21,Roland Idowu,St. Mirren FC,Midfield,24.5,1249.0,150000,0.154,0.311
+22,Killian Phillips,St. Mirren FC,Midfield,24.3,3196.0,1000000,0.54,0.299
+23,Keelan Adams,Falkirk FC,Defender,24.6,2012.0,250000,0.195,0.284
+24,Ethan Schilte-Brown,Kilmarnock FC,Defender,21.1,1426.0,100000,0.129,0.281
+25,Rocky Bushiri,Hibernian FC,Defender,26.6,2792.0,1000000,0.513,0.279
+26,Mats Knoester,Aberdeen FC,Defender,27.6,2089.0,600000,0.39,0.274
+27,Luca Stephenson,Dundee United FC,Defender,22.8,2723.0,1000000,0.513,0.274
+28,Jayden Richardson,St. Mirren FC,Defender,25.8,2020.0,350000,0.233,0.274
+29,Iurie Iovu,Dundee United FC,Defender,24.0,2444.0,400000,0.261,0.269
+30,Dimitar Mitov,Aberdeen FC,Goalkeeper,29.5,2970.0,800000,0.437,0.261
+31,Jamie McCart,Heart of Midlothian FC,Defender,29.0,680.0,350000,0.218,0.249
+32,Yan Dhanda,Dundee FC,Midfield,27.6,2083.0,400000,0.242,0.234
+33,Imari Samuels,Dundee FC,Defender,23.4,1854.0,300000,0.199,0.234
+34,John Koutroumbis,Motherwell FC,Defender,28.3,1445.0,350000,0.216,0.234
+35,Michael Schjönning-Larsen,Kilmarnock FC,Defender,25.4,1558.0,350000,0.209,0.224
+36,Ethan Hamilton,Dundee FC,Midfield,27.7,2909.0,400000,0.238,0.224
+37,Greg Kiltie,Kilmarnock FC,Attack,29.5,1894.0,250000,0.159,0.214
+38,Harry Milne,Heart of Midlothian FC,Defender,29.7,2489.0,550000,0.302,0.209
+39,George Stanger,Kilmarnock FC,Defender,25.9,1270.0,200000,0.133,0.201
+40,Will Ferry,Dundee United FC,Midfield,25.6,3193.0,1200000,0.492,0.199
+41,Bert Esselink,Dundee United FC,Defender,26.9,1914.0,350000,0.204,0.199
+42,Henry Cartwright,Falkirk FC,Midfield,21.6,1138.0,150000,0.114,0.197
+43,Jamie Brandon,Kilmarnock FC,Defender,28.4,676.0,250000,0.15,0.194
+44,John Souttar,Rangers FC,Defender,29.8,2884.0,2000000,0.582,0.189
+45,Panutche Camara,Dundee United FC,Midfield,29.3,2005.0,300000,0.172,0.189
+46,Tom Lowery,Kilmarnock FC,Midfield,28.5,763.0,175000,0.12,0.184
+47,Dario Naamo,Dundee United FC,Defender,21.1,780.0,300000,0.169,0.179
+48,Filip Lissah,Falkirk FC,Defender,21.6,2452.0,500000,0.255,0.167
+49,Kanayo Megwa,Hibernian FC,Defender,22.3,704.0,200000,0.121,0.167
+50,Bruce Anderson,Kilmarnock FC,Attack,27.8,1754.0,300000,0.159,0.164
+51,Lukas Fadinger,Motherwell FC,Midfield,25.8,2665.0,350000,0.183,0.159
+52,Dylan Lobban,Aberdeen FC,Defender,20.9,896.0,250000,0.134,0.154
+53,Nicky Cadden,Hibernian FC,Midfield,29.8,1718.0,600000,0.286,0.139
+54,Felix Passlack,Hibernian FC,Defender,28.1,897.0,700000,0.321,0.139
+55,Billy Koumetio,Dundee FC,Defender,23.6,987.0,400000,0.204,0.134
+56,Jack Thomson,Kilmarnock FC,Midfield,26.5,477.0,200000,0.113,0.127
+57,Emmanuel Gyamfi,Aberdeen FC,Defender,22.0,925.0,200000,0.111,0.122
+58,Jamie McGrath,Hibernian FC,Midfield,29.8,2742.0,1200000,0.403,0.119
+59,Babacar Fati,Livingston FC,Defender,26.4,674.0,300000,0.134,0.104
+60,Jack Milne,Aberdeen FC,Defender,23.4,3032.0,1500000,0.414,0.095
+61,Ante Palaversa,Aberdeen FC,Midfield,26.2,630.0,550000,0.238,0.095
+62,Liam Scales,Celtic FC,Defender,27.9,3930.0,5000000,0.596,0.092
+63,Calvin Miller,Falkirk FC,Midfield,28.5,2880.0,600000,0.258,0.09
+64,Neil Farrugia,Dundee United FC,Midfield,27.1,1019.0,125000,0.088,0.087
+65,Lewis Neilson,Falkirk FC,Defender,23.1,1048.0,600000,0.256,0.085
+66,Callum Jones,Dundee FC,Midfield,25.3,1242.0,300000,0.131,0.085
+67,David Watson,Kilmarnock FC,Midfield,21.4,2399.0,2000000,0.454,0.08
+68,Beni Baningime,Heart of Midlothian FC,Midfield,27.8,1453.0,1500000,0.405,0.08
+69,Cammy Devlin,Heart of Midlothian FC,Midfield,28.1,2232.0,2000000,0.446,0.075
+70,Alexander Jensen,Aberdeen FC,Defender,24.9,1824.0,1500000,0.404,0.075
+71,Topi Keskinen,Aberdeen FC,Attack,23.3,1805.0,1400000,0.391,0.075
+72,Gavin Molloy,Aberdeen FC,Defender,24.7,974.0,600000,0.248,0.075
+73,Jonah Ayunga,St. Mirren FC,Attack,29.1,1216.0,350000,0.146,0.075
+74,Toyosi Olusanya,Aberdeen FC,Attack,28.7,773.0,500000,0.207,0.072
+75,Ross Graham,Dundee United FC,Defender,25.4,1645.0,700000,0.267,0.065
+76,Oisin McEntee,Heart of Midlothian FC,Midfield,25.5,2022.0,500000,0.205,0.062
+77,Dane Murray,Celtic FC,Defender,23.0,740.0,350000,0.136,0.06
+78,Oscar Priestman,Motherwell FC,Midfield,23.3,1082.0,250000,0.111,0.055
+79,Anthony Ralston,Celtic FC,Defender,27.6,1738.0,1500000,0.393,0.055
+80,Connor Barron,Rangers FC,Midfield,23.9,1643.0,2500000,0.492,0.052
+81,Sam Cleall-Harding,Dundee United FC,Defender,20.3,519.0,100000,0.063,0.052
+82,Luke Graham,Dundee FC,Defender,22.4,3055.0,2000000,0.424,0.05
+83,Samson Lawal,Livingston FC,Midfield,22.2,863.0,150000,0.084,0.047
+84,Brooklyn Kabongolo,Livingston FC,Defender,23.7,840.0,25000,0.054,0.045
+85,Dylan Tait,Falkirk FC,Midfield,24.6,2805.0,800000,0.273,0.042
+86,Alfie Agyeman,Falkirk FC,Attack,26.3,537.0,100000,0.057,0.042
+87,Scott Tiffoney,Kilmarnock FC,Attack,27.9,594.0,250000,0.11,0.04
+88,Auston Trusty,Celtic FC,Defender,27.9,2833.0,6000000,0.561,0.037
+89,Ethan Ross,Falkirk FC,Midfield,24.9,832.0,250000,0.11,0.035
+90,Elliot Watt,Motherwell FC,Midfield,26.3,2503.0,2000000,0.411,0.035
+91,Connor McLennan,Livingston FC,Attack,26.8,850.0,100000,0.054,0.032
+92,Callum Hendry,Motherwell FC,Attack,28.6,709.0,150000,0.071,0.032
+93,Finlay Robertson,Dundee FC,Midfield,23.6,1122.0,600000,0.225,0.03
+94,Luke McCowan,Celtic FC,Midfield,28.6,1589.0,1500000,0.362,0.03
+95,Mohamed Diomandé,Rangers FC,Midfield,24.7,2263.0,7000000,0.562,0.025
+96,Michael Steinwender,Heart of Midlothian FC,Defender,26.2,1541.0,1200000,0.324,0.025
+97,Joel Cotterill,Dundee FC,Midfield,21.7,883.0,150000,0.067,0.022
+98,Nicolas Raskin,Rangers FC,Midfield,25.4,3959.0,12000000,0.594,0.02
+99,Lyall Cameron,Aberdeen FC,Midfield,23.7,1325.0,1200000,0.322,0.02
+100,Nasser Djiga,Rangers FC,Defender,23.6,2905.0,6000000,0.536,0.017

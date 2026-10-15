@@ -41,3 +41,14 @@ Reason: plain language search over pre transfer player profiles, with a measurab
 Open: stat source (FBref advanced stats removed Jan 2026), league list vs Phase 1 sources,
 DuckDB vs Postgres for the main pipeline.
 Affects: new dependencies (to be pinned when step 2 starts), new Postgres setup, leakage rule applies to any RAG output fed to the model.
+
+## 2026-10-15: Step 2 modelling rules (fixed before counts or results were seen)
+Decision: league of each club at the time of a move comes from games played (last league game on or before the date for the from club, first league game on or after for the to club), not from the club's current league.
+Decision: pre transfer record needs at least 1 appearance in the 365 days before the move. Moves dated 2013-06-01 to 2024-09-30.
+Decision: label regular_starter = at least 50% of possible league minutes at the new club in year 1 or year 2 after the move.
+Decision: split by date with an embargo (train to 2020-06-30, validation 2022-07 to 2023-06, test from 2023-07). Models: logistic regression, gradient boosting, PyTorch MLP; baselines are the prior and a minutes rule. Hyperparameters picked on validation ROC AUC only.
+Result: 1,669 records, below the resume's 3500+. Not widened to reach a target.
+
+## 2026-10-15: Shortlist age rule (added after seeing output)
+Decision: shortlist eligibility adds age 30 or under, the 95th percentile of mover ages in the training data.
+Reason: the first version had no age rule and ranked 33 to 38 year old players highest, because they are cheap and the model has little signal on age at that range. This rule was set from the age distribution of real movers, not from any outcome metric.

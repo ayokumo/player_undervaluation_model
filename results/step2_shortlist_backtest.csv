@@ -1,0 +1,4 @@
+,moves,starter_rate
+all test moves,333,0.3093
+top 20% by predicted probability,67,0.5672
+top 20% by shortlist score (prob rank minus value rank),67,0.4925
