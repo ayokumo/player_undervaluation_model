@@ -2,6 +2,10 @@
 import os
 from functools import lru_cache
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 DEFAULT_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 DIM = 384
 

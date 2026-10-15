@@ -85,7 +85,7 @@ def score_answer(q: dict, answer: str) -> bool:
     return has_number(answer, value) and (name_ok or not needs_name)
 
 
-CITE = re.compile(r"\[(Note: )?([^\[\]]+?)(?:, (\d{4}/\d{2}))?\]")
+CITE = re.compile(r"\[(Note: )?([^\[\]]+?)(?:, (\d{4}/\d{2}))?\]")  # note titles may end in ", 2025/26"
 
 
 def score_citations(answer: str, valid_pairs: set, note_titles: set) -> tuple[int, int]:
@@ -93,7 +93,8 @@ def score_citations(answer: str, valid_pairs: set, note_titles: set) -> tuple[in
     for m in CITE.finditer(answer):
         total += 1
         if m.group(1):
-            good += m.group(2).strip() in note_titles
+            full = (m.group(2) + (f", {m.group(3)}" if m.group(3) else "")).strip()
+            good += full in note_titles
         elif m.group(3):
             good += (norm(m.group(2).strip()), m.group(3)) in valid_pairs
     return good, total
@@ -120,9 +121,14 @@ def render() -> None:
     for r in runs:
         out.append(f"| {r['date']} | {r['split']} | {r['n']} | {r['correct']}/{r['n']} ({r['correct']/r['n']:.0%}) | "
                    f"{r['cite_good']}/{r['cite_total']} | {r['ned_correct']}/{r['ned_total']} | {r['model']} | {r['prompt_hash']} |")
-    if runs:
-        last = runs[-1]
-        out += ["", f"## Per question, latest run ({last['split']}, {last['date']})", "", "| id | type | correct | route | answer (first 160 characters) |", "|---|---|---|---|---|"]
+    latest = {}
+    for r in runs:
+        latest[r["split"]] = r
+    for split in ("tune", "heldout", "all"):
+        last = latest.get(split)
+        if not last:
+            continue
+        out += ["", f"## Per question, latest {split} run ({last['date']})", "", "| id | type | correct | route | answer (first 160 characters) |", "|---|---|---|---|---|"]
         for d in last["details"]:
             out.append(f"| {d['id']} | {d['type']} | {'yes' if d['correct'] else 'NO'} | {d.get('route')} | {d['answer'][:160].replace('|', '/').replace(chr(10), ' ')} |")
     RESULTS.write_text("\n".join(out) + "\n")

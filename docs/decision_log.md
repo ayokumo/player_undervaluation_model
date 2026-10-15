@@ -57,4 +57,4 @@ Reason: the first version had no age rule and ranked 33 to 38 year old players h
 Decision: the assistant reads Transfermarkt player seasons from PostgreSQL (no scraping). 9 source leagues, seasons 2022/23 to 2025/26, 900 minutes minimum, 8,177 profiles.
 Reason: FBref advanced stats are gone, StatsBomb open data covers few of these leagues, and the Transfermarkt table is already loaded and linked.
 Decision: the model fills a fixed schema, code builds the SQL. The 20 benchmark questions are split 10 tune and 10 heldout before any run.
-Open: embedding model files and the API key must come from the user (Hugging Face is blocked from the build environment).
+Resolved 2026-10-15: embedding model files were downloaded by the user (Hugging Face is blocked from the build environment) and the API key was supplied. Benchmark run: tune 10 of 10, held out 9 of 10.

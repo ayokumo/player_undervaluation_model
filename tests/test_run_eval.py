@@ -54,3 +54,8 @@ def test_citation_check():
     good, total = score_citations("[Kodai Sano, 2025/26] and [Nobody Real, 2025/26] and [Note: A note]",
                                   {("kodai sano", "2025/26")}, {"A note"})
     assert (good, total) == (2, 3)
+
+
+def test_note_title_that_ends_with_a_season_is_matched_whole():
+    good, total = score_citations("[Note: Belgian Pro League attackers, 2025/26]", set(), {"Belgian Pro League attackers, 2025/26"})
+    assert (good, total) == (1, 1)
