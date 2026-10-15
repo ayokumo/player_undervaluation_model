@@ -10,6 +10,7 @@ A public demo spends real API credit, so there are three guards, all set by env 
   DAILY_LIMIT_TOTAL    questions for the whole service per day (default 200)
 Counters live in memory, so they reset when the container restarts.
 """
+import logging
 import os
 import threading
 from datetime import date
@@ -18,6 +19,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
+log = logging.getLogger("uvicorn.error")
 app = FastAPI(title="Football scouting assistant", docs_url=None, redoc_url=None)
 
 MAX_CHARS = int(os.environ.get("MAX_QUESTION_CHARS", "300"))
@@ -73,7 +75,11 @@ def ask(body: Question, request: Request) -> dict:
     if len(q) > MAX_CHARS:
         raise HTTPException(400, f"Keep the question under {MAX_CHARS} characters.")
     _charge(_client_ip(request))
-    out = _answer(q)
+    try:
+        out = _answer(q)
+    except Exception:  # model or database failure: log it, show a plain message, never the traceback
+        log.exception("ask failed")
+        raise HTTPException(502, "The assistant could not get an answer from the model service. Please try again later.")
     return {"answer": out["answer"], "sources": out["sources"], "route": out.get("route")}
 
 

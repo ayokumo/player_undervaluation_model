@@ -42,3 +42,13 @@ def test_total_limit(monkeypatch):
 
 def test_home_page(monkeypatch):
     assert "scouting assistant" in _client(monkeypatch).get("/").text
+
+
+def test_backend_failure_is_a_clean_502(monkeypatch):
+    c = _client(monkeypatch)
+    def boom(q):
+        raise RuntimeError("credit balance too low")
+    monkeypatch.setattr(server, "_answer", boom)
+    r = c.post("/ask", json={"question": "a"})
+    assert r.status_code == 502
+    assert "credit" not in r.json()["detail"]
