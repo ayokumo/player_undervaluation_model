@@ -12,17 +12,17 @@ from dataclasses import dataclass, field
 # samples never show up in answers. 900 = ten full matches. Revisit in step 3.
 MIN_MINUTES = 900
 
-# Key per 90 stats shown in the profile for each position group.
-# Field names must match columns in the Postgres stats table once step 2 lands.
-# Only stats that the chosen source actually provides should stay here
-# (FBref advanced stats were removed in Jan 2026, see docs/data_sources.md).
+# Stats shown in the profile for each position group. They are the stats the data source really has:
+# Transfermarkt gives appearances, minutes, goals, assists and cards per player, club and season
+# (FBref advanced stats were removed in Jan 2026, see docs/data_sources.md, so there is no xG or
+# progressive passing). Field names match the columns of tm.player_season_stats.
 POSITION_STATS: dict[str, list[str]] = {
-    "winger": ["goals_p90", "assists_p90", "xg_p90", "xa_p90", "prog_carries_p90", "dribbles_won_p90", "key_passes_p90"],
-    "striker": ["goals_p90", "assists_p90", "xg_p90", "shots_p90", "shots_on_target_p90"],
-    "attacking_mid": ["goals_p90", "assists_p90", "xa_p90", "key_passes_p90", "prog_passes_p90"],
-    "central_mid": ["prog_passes_p90", "key_passes_p90", "tackles_p90", "interceptions_p90"],
-    "defender": ["tackles_p90", "interceptions_p90", "clearances_p90", "aerials_won_p90"],
-    "goalkeeper": ["saves_p90", "goals_against_p90", "clean_sheets"],
+    "winger": ["goals_p90", "assists_p90", "goal_contrib_p90", "minutes_per_app"],
+    "striker": ["goals_p90", "assists_p90", "goal_contrib_p90", "minutes_per_app"],
+    "attacking_mid": ["goals_p90", "assists_p90", "goal_contrib_p90", "minutes_per_app"],
+    "central_mid": ["goals_p90", "assists_p90", "yellows_p90", "minutes_per_app"],
+    "defender": ["goals_p90", "assists_p90", "yellows_p90", "minutes_per_app"],
+    "goalkeeper": ["minutes_per_app"],
 }
 
 
@@ -31,6 +31,10 @@ class ProfileDocument:
     doc_id: str
     text: str
     metadata: dict = field(default_factory=dict)
+
+
+def _show(value, fmt: str) -> str:
+    return "n/a" if value is None else fmt.format(value)
 
 
 def is_indexable(row: dict, min_minutes: int = MIN_MINUTES) -> bool:
@@ -66,8 +70,9 @@ def build_profile(row: dict) -> ProfileDocument:
             f"Season: {row['season']}",
             f"Position: {position}",
             f"League: {row['league']}  Club: {row['club']}",
-            f"Age: {row['age']}  Minutes: {row['minutes']}",
-            "Per 90 stats:",
+            f"Age: {row['age']}  Minutes: {row['minutes']}  Appearances: {_show(row.get('apps'), '{:.0f}')}",
+            f"Market value at season end (EUR): {_show(row.get('market_value_eur'), '{:,.0f}')}",
+            "Stats (per 90 where named p90):",
             *stat_lines,
         ]
     )
@@ -79,6 +84,9 @@ def build_profile(row: dict) -> ProfileDocument:
         "league": row["league"],
         "age": row["age"],
         "minutes": row["minutes"],
+        "name": row["name"],
+        "club": row["club"],
+        "market_value_eur": row.get("market_value_eur"),
         "doc_type": "stats_profile",
     }
-    return ProfileDocument(doc_id=f"{row['player_id']}_{row['season']}", text=text, metadata=metadata)
+    return ProfileDocument(doc_id=f"{row['player_id']}_{row['season']}_{row['club']}", text=text, metadata=metadata)

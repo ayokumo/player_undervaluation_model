@@ -1,29 +1,159 @@
-"""Step 5 (planned): run the 20 question benchmark and write eval/results.md.
+"""Run the 20 question benchmark and write eval/results.md (never edited by hand).
 
-Plan:
-* For each scored question in eval/benchmark.json: rerun its SQL to get the
-  expected answer and citations, then ask rag.chain.answer the question.
-* Metrics:
-    answer accuracy      = answers matching the SQL result
-    citation accuracy    = cited player seasons that are in the SQL result
-    not enough data      = said "not enough data" on questions of type not_enough_data
-* Write a dated table to eval/results.md. Never edit results.md by hand.
+    python -m eval.run_eval --split tune        # while tuning prompts
+    python -m eval.run_eval --split heldout     # once, on frozen prompts
+    python -m eval.run_eval --split all
+
+Each run is appended to eval/runs.jsonl with the prompt file hash, model name and date. results.md is rendered
+from that log. Scoring:
+  answer correct   ranking: every expected name appears, in SQL order (ties may swap); value and comparison:
+                   the expected value (and name) appears; not_enough_data: the answer says "not enough data".
+  citation valid   share of cited [Player, Season] pairs that exist in the data, and [Note: title] pairs that
+                   match a real note, among answers that cite anything.
 """
-
+import argparse
+import hashlib
 import json
+import re
+import unicodedata
+from datetime import datetime, timezone
 from pathlib import Path
 
-BENCHMARK = Path(__file__).parent / "benchmark.json"
+HERE = Path(__file__).parent
+BENCHMARK = HERE / "benchmark.json"
+RUNS = HERE / "runs.jsonl"
+RESULTS = HERE / "results.md"
+PROMPTS = HERE.parent / "rag" / "prompts.py"
 
 
-def load_benchmark(path: Path = BENCHMARK) -> list[dict]:
-    """Load only the questions marked scored=true."""
+def load_benchmark(path: Path = BENCHMARK, split: str = "all") -> list[dict]:
     data = json.loads(path.read_text())
-    return [q for q in data["questions"] if q.get("scored")]
+    qs = [q for q in data["questions"] if q.get("scored")]
+    return qs if split == "all" else [q for q in qs if q["split"] == split]
+
+
+def norm(s: str) -> str:
+    s = unicodedata.normalize("NFKD", str(s))
+    s = "".join(ch for ch in s if not unicodedata.combining(ch)).lower()
+    return s.replace(",", "").replace("€", "eur ")
+
+
+def number_forms(v: float) -> list[str]:
+    forms = {f"{v:g}", f"{v:.2f}", f"{v:.3f}", f"{v:.1f}"}
+    if float(v).is_integer():
+        forms.add(str(int(v)))
+    if abs(v) >= 1e6:
+        m = v / 1e6
+        forms |= {f"{m:g} million", f"{m:g}m", f"{m:g}million", f"{int(v)}", f"{m:.1f}m"}
+    return sorted(forms)
+
+
+def has_number(text: str, v: float) -> bool:
+    t = norm(text)
+    return any(re.search(r"(?<![\d.])" + re.escape(f) + r"(?![\d])", t) for f in number_forms(v))
+
+
+def says_not_enough(text: str) -> bool:
+    return "not enough data" in norm(text)
+
+
+def score_answer(q: dict, answer: str) -> bool:
+    rows, kind, t = q["expected_rows"], q["kind"], norm(answer)
+    if kind == "ned":
+        return says_not_enough(answer)
+    if says_not_enough(answer):
+        return False
+    if kind == "ranking":
+        pos = []
+        for r in rows:
+            i = t.find(norm(r["name"]))
+            if i < 0:
+                return False
+            pos.append((i, r["value"]))
+        for (i1, v1), (i2, v2) in zip(pos, pos[1:]):
+            if i2 < i1 and v1 != v2:
+                return False
+        return True
+    top = rows[0]
+    value = top["value"]
+    name_ok = norm(top["name"]) in t
+    if kind == "comparison":
+        return name_ok and has_number(answer, value)
+    if isinstance(value, str):
+        return norm(value) in t
+    needs_name = q["type"] == "reports"
+    return has_number(answer, value) and (name_ok or not needs_name)
+
+
+CITE = re.compile(r"\[(Note: )?([^\[\]]+?)(?:, (\d{4}/\d{2}))?\]")
+
+
+def score_citations(answer: str, valid_pairs: set, note_titles: set) -> tuple[int, int]:
+    good = total = 0
+    for m in CITE.finditer(answer):
+        total += 1
+        if m.group(1):
+            good += m.group(2).strip() in note_titles
+        elif m.group(3):
+            good += (norm(m.group(2).strip()), m.group(3)) in valid_pairs
+    return good, total
+
+
+def fetch_reference():
+    import psycopg
+    from rag.store import db_url
+    with psycopg.connect(db_url()) as c:
+        pairs = {(norm(n), s) for n, s in c.execute("SELECT name, season FROM tm.player_season_stats").fetchall()}
+    notes = set()
+    for p in (HERE.parent / "notes" / "scouting_notes").glob("*.md"):
+        m = re.search(r"^title: (.+)$", p.read_text(), re.M)
+        if m:
+            notes.add(m.group(1).strip())
+    return pairs, notes
+
+
+def render() -> None:
+    runs = [json.loads(line) for line in RUNS.read_text().splitlines() if line.strip()]
+    out = ["# Evaluation results", "", "Generated by `python -m eval.run_eval`. Do not edit by hand.",
+           "Questions: 20, SQL backed (`eval/benchmark.json`). 10 tune questions were used while tuning prompts, 10 heldout questions were not.", "",
+           "| Run date | Split | Questions | Answer accuracy | Citation accuracy | Not enough data correct | Model | Prompt hash |", "|---|---|---|---|---|---|---|---|"]
+    for r in runs:
+        out.append(f"| {r['date']} | {r['split']} | {r['n']} | {r['correct']}/{r['n']} ({r['correct']/r['n']:.0%}) | "
+                   f"{r['cite_good']}/{r['cite_total']} | {r['ned_correct']}/{r['ned_total']} | {r['model']} | {r['prompt_hash']} |")
+    if runs:
+        last = runs[-1]
+        out += ["", f"## Per question, latest run ({last['split']}, {last['date']})", "", "| id | type | correct | route | answer (first 160 characters) |", "|---|---|---|---|---|"]
+        for d in last["details"]:
+            out.append(f"| {d['id']} | {d['type']} | {'yes' if d['correct'] else 'NO'} | {d.get('route')} | {d['answer'][:160].replace('|', '/').replace(chr(10), ' ')} |")
+    RESULTS.write_text("\n".join(out) + "\n")
 
 
 def main() -> None:
-    raise NotImplementedError("Step 5: eval run not built yet")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--split", choices=["tune", "heldout", "all"], default="all")
+    ap.add_argument("--note", default="")
+    args = ap.parse_args()
+    import os
+    from rag.chain import answer
+    pairs, notes = fetch_reference()
+    details, good, total = [], 0, 0
+    for q in load_benchmark(split=args.split):
+        res = answer(q["question"])
+        ok = score_answer(q, res["answer"])
+        g, t = score_citations(res["answer"], pairs, notes)
+        good, total = good + g, total + t
+        details.append({"id": q["id"], "type": q["type"], "correct": ok, "route": res.get("route"), "answer": res["answer"]})
+        print(q["id"], "OK " if ok else "WRONG", res.get("route"), "|", res["answer"][:100].replace("\n", " "))
+    ned = [d for d in details if d["type"] == "not_enough_data"]
+    run = {"date": datetime.now(timezone.utc).date().isoformat(), "split": args.split, "n": len(details),
+           "correct": sum(d["correct"] for d in details), "cite_good": good, "cite_total": total,
+           "ned_correct": sum(d["correct"] for d in ned), "ned_total": len(ned),
+           "model": os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5-5"),
+           "prompt_hash": hashlib.sha1(PROMPTS.read_bytes()).hexdigest()[:10], "note": args.note, "details": details}
+    with RUNS.open("a") as f:
+        f.write(json.dumps(run, ensure_ascii=False) + "\n")
+    render()
+    print(f"\n{run['correct']}/{run['n']} correct, citations {good}/{total}. Wrote {RESULTS.name}")
 
 
 if __name__ == "__main__":

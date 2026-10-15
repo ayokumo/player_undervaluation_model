@@ -52,3 +52,9 @@ Result: 1,669 records, below the resume's 3500+. Not widened to reach a target.
 ## 2026-10-15: Shortlist age rule (added after seeing output)
 Decision: shortlist eligibility adds age 30 or under, the 95th percentile of mover ages in the training data.
 Reason: the first version had no age rule and ranked 33 to 38 year old players highest, because they are cheap and the model has little signal on age at that range. This rule was set from the age distribution of real movers, not from any outcome metric.
+
+## 2026-10-15: RAG data source and design (Step 3)
+Decision: the assistant reads Transfermarkt player seasons from PostgreSQL (no scraping). 9 source leagues, seasons 2022/23 to 2025/26, 900 minutes minimum, 8,177 profiles.
+Reason: FBref advanced stats are gone, StatsBomb open data covers few of these leagues, and the Transfermarkt table is already loaded and linked.
+Decision: the model fills a fixed schema, code builds the SQL. The 20 benchmark questions are split 10 tune and 10 heldout before any run.
+Open: embedding model files and the API key must come from the user (Hugging Face is blocked from the build environment).

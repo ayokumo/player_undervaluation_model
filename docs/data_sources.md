@@ -19,7 +19,7 @@ Full history 2012 to 2025 (14 seasons):
   Phase 1 sources: BE1, NL1, PO1, TR1, SC1, DK1, GR1, RU1, UKR1
 Only 2024 to 2025: ARG1, BRA1, A1, C1, KR1, PL1, SE1, NO1, SER1, TS1, RO1,
   MLS1, MEX1, SA1, AUS1, RSK1; JAP1 and COL1 one season only.
-Season labels assumed to be start year (2012 = 2012/13). UNVERIFIED.
+Season labels are the start year (2012 = 2012/13). Verified 2026-10-15 against game dates for NL1 and BE1.
 
 ### Known issues (transfers table, 175,165 rows)
 Date range: 1993-07-01 to 2030-06-30.

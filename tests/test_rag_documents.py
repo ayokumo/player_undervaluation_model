@@ -14,7 +14,7 @@ def winger_row(**overrides):
         "age": 21,
         "minutes": 2100,
         "goals_p90": 0.31,
-        "key_passes_p90": 2.4,
+        "assists_p90": 0.24,
     }
     row.update(overrides)
     return row
@@ -22,14 +22,14 @@ def winger_row(**overrides):
 
 def test_profile_contains_identity_and_stats():
     doc = build_profile(winger_row())
-    assert doc.doc_id == "123_2024/25"
+    assert doc.doc_id == "123_2024/25_Test FC"
     assert "Test Winger" in doc.text
-    assert "key_passes_p90: 2.40" in doc.text
+    assert "assists_p90: 0.24" in doc.text
 
 
 def test_missing_stat_shown_as_na_not_zero():
     doc = build_profile(winger_row())
-    assert "xg_p90: n/a" in doc.text
+    assert "goal_contrib_p90: n/a" in doc.text
 
 
 def test_metadata_has_filter_fields():

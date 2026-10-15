@@ -1,19 +1,395 @@
 {
-  "version": 1,
-  "status": "schema only, 0 of 20 questions written",
+  "version": 2,
   "rules": [
-    "Every expected answer comes from running the saved SQL against the database, never written by hand.",
-    "Types to cover: single_fact, filtered_ranking, profile_match, comparison, not_enough_data."
+    "Every expected answer comes from running the saved SQL against tm.player_season_stats.",
+    "split tune = questions used while tuning prompts. split heldout = never used while tuning, scored once on frozen prompts.",
+    "not_enough_data questions: the saved SQL returns 0 (the stat, league or season is not in the data)."
   ],
   "questions": [
     {
-      "id": "q00_example",
+      "id": "t01",
+      "split": "tune",
+      "type": "single_fact",
+      "kind": "value",
+      "question": "How many goals did Christos Tzolis score in the Belgian Pro League in 2025/26?",
+      "sql": "SELECT name, season, goals AS value FROM tm.player_season_stats WHERE name='Christos Tzolis' AND season='2025/26'",
+      "expected_rows": [
+        {
+          "name": "Christos Tzolis",
+          "season": "2025/26",
+          "value": 9
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t02",
+      "split": "tune",
       "type": "filtered_ranking",
-      "question": "EXAMPLE ONLY, not scored: top 3 wingers by key passes per 90 in the Eredivisie, minimum 900 minutes?",
-      "sql": "SELECT player_id, name, season FROM player_season_stats WHERE league = 'NL1' AND position_group = 'winger' AND minutes >= 900 ORDER BY key_passes_p90 DESC LIMIT 3;",
-      "expected_answer": null,
-      "expected_citations": null,
-      "scored": false
+      "kind": "ranking",
+      "question": "Who were the top 3 wingers in the Eredivisie in 2024/25 by goals per 90, minimum 900 minutes?",
+      "sql": "SELECT name, season, goals_p90 AS value FROM tm.player_season_stats WHERE league='NL1' AND season='2024/25' AND position_group='winger' AND minutes >= 900 ORDER BY goals_p90 DESC NULLS LAST, minutes DESC, name LIMIT 3",
+      "expected_rows": [
+        {
+          "name": "Ibrahim Sadiq",
+          "season": "2024/25",
+          "value": 0.552
+        },
+        {
+          "name": "Noa Lang",
+          "season": "2024/25",
+          "value": 0.52
+        },
+        {
+          "name": "Johan Bakayoko",
+          "season": "2024/25",
+          "value": 0.512
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t03",
+      "split": "tune",
+      "type": "filtered_ranking",
+      "kind": "ranking",
+      "question": "Which 3 defenders aged 21 or under had the most minutes in Liga Portugal in 2025/26?",
+      "sql": "SELECT name, season, minutes AS value FROM tm.player_season_stats WHERE league='PO1' AND season='2025/26' AND position_group='defender' AND age<=21 AND minutes >= 900 ORDER BY minutes DESC NULLS LAST, minutes DESC, name LIMIT 3",
+      "expected_rows": [
+        {
+          "name": "Bastien Meupiyou",
+          "season": "2025/26",
+          "value": 2619
+        },
+        {
+          "name": "Diogo Travassos",
+          "season": "2025/26",
+          "value": 2436
+        },
+        {
+          "name": "Alberto Costa",
+          "season": "2025/26",
+          "value": 2227
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t04",
+      "split": "tune",
+      "type": "comparison",
+      "kind": "comparison",
+      "question": "Who had the higher goals per 90 in the 2025/26 Turkish Super Lig, Victor Osimhen or Mauro Icardi?",
+      "sql": "SELECT name, season, goals_p90 AS value FROM tm.player_season_stats WHERE league='TR1' AND season='2025/26' AND name IN ('Victor Osimhen','Mauro Icardi') ORDER BY goals_p90 DESC",
+      "expected_rows": [
+        {
+          "name": "Mauro Icardi",
+          "season": "2025/26",
+          "value": 0.96
+        },
+        {
+          "name": "Victor Osimhen",
+          "season": "2025/26",
+          "value": 0.788
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t05",
+      "split": "tune",
+      "type": "reports",
+      "kind": "value",
+      "question": "According to the scouting notes, which Belgian Pro League attacker had the highest goals plus assists per 90 in 2025/26?",
+      "sql": "SELECT name, season, goal_contrib_p90 AS value FROM tm.player_season_stats WHERE league='BE1' AND season='2025/26' AND position_group IN ('winger','striker','attacking_mid') AND minutes >= 900 ORDER BY goal_contrib_p90 DESC NULLS LAST, minutes DESC, name LIMIT 1",
+      "expected_rows": [
+        {
+          "name": "Christos Tzolis",
+          "season": "2025/26",
+          "value": 0.912
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t06",
+      "split": "tune",
+      "type": "not_enough_data",
+      "kind": "ned",
+      "question": "What was Christos Tzolis's xG per 90 in 2025/26?",
+      "sql": "SELECT count(*) AS n FROM information_schema.columns WHERE table_schema='tm' AND table_name='player_season_stats' AND column_name IN ('xg','xg_p90','xa_p90')",
+      "expected_rows": [
+        {
+          "n": 0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t07",
+      "split": "tune",
+      "type": "not_enough_data",
+      "kind": "ned",
+      "question": "Who was the best striker in the Brazilian Serie A in 2024/25?",
+      "sql": "SELECT count(*) AS n FROM tm.player_season_stats WHERE league IN ('BRA1')",
+      "expected_rows": [
+        {
+          "n": 0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t08",
+      "split": "tune",
+      "type": "single_fact",
+      "kind": "value",
+      "question": "What was Ardon Jashari's market value at the end of 2024/25?",
+      "sql": "SELECT name, season, market_value_eur AS value FROM tm.player_season_stats WHERE name='Ardon Jashari' AND season='2024/25'",
+      "expected_rows": [
+        {
+          "name": "Ardon Jashari",
+          "season": "2024/25",
+          "value": 32000000.0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t09",
+      "split": "tune",
+      "type": "filtered_ranking",
+      "kind": "ranking",
+      "question": "Who were the top 3 central midfielders in the Scottish Premiership in 2025/26 by assists per 90, minimum 900 minutes?",
+      "sql": "SELECT name, season, assists_p90 AS value FROM tm.player_season_stats WHERE league='SC1' AND season='2025/26' AND position_group='central_mid' AND minutes >= 900 ORDER BY assists_p90 DESC NULLS LAST, minutes DESC, name LIMIT 3",
+      "expected_rows": [
+        {
+          "name": "Callum Slattery",
+          "season": "2025/26",
+          "value": 0.374
+        },
+        {
+          "name": "Marc Leonard",
+          "season": "2025/26",
+          "value": 0.3
+        },
+        {
+          "name": "Josh Mulligan",
+          "season": "2025/26",
+          "value": 0.245
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "t10",
+      "split": "tune",
+      "type": "not_enough_data",
+      "kind": "ned",
+      "question": "How many passes did Joey Veerman complete in 2025/26?",
+      "sql": "SELECT count(*) AS n FROM information_schema.columns WHERE table_schema='tm' AND table_name='player_season_stats' AND column_name IN ('passes','passes_completed','pass_accuracy')",
+      "expected_rows": [
+        {
+          "n": 0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h01",
+      "split": "heldout",
+      "type": "single_fact",
+      "kind": "value",
+      "question": "How many minutes did Frederik Tingager play in the Danish Superliga in 2023/24?",
+      "sql": "SELECT name, season, minutes AS value FROM tm.player_season_stats WHERE name='Frederik Tingager' AND season='2023/24'",
+      "expected_rows": [
+        {
+          "name": "Frederik Tingager",
+          "season": "2023/24",
+          "value": 1980
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h02",
+      "split": "heldout",
+      "type": "filtered_ranking",
+      "kind": "ranking",
+      "question": "Name the top 3 strikers in the Greek Super League in 2024/25 by goals per 90, minimum 900 minutes.",
+      "sql": "SELECT name, season, goals_p90 AS value FROM tm.player_season_stats WHERE league='GR1' AND season='2024/25' AND position_group='striker' AND minutes >= 900 ORDER BY goals_p90 DESC NULLS LAST, minutes DESC, name LIMIT 3",
+      "expected_rows": [
+        {
+          "name": "Jefté Betancor",
+          "season": "2024/25",
+          "value": 0.758
+        },
+        {
+          "name": "Ayoub El Kaabi",
+          "season": "2024/25",
+          "value": 0.728
+        },
+        {
+          "name": "Loren Morón",
+          "season": "2024/25",
+          "value": 0.644
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h03",
+      "split": "heldout",
+      "type": "filtered_ranking",
+      "kind": "ranking",
+      "question": "Which 3 goalkeepers played the most minutes in the Ukrainian Premier League in 2024/25?",
+      "sql": "SELECT name, season, minutes AS value FROM tm.player_season_stats WHERE league='UKR1' AND season='2024/25' AND position_group='goalkeeper' AND minutes >= 900 ORDER BY minutes DESC NULLS LAST, minutes DESC, name LIMIT 3",
+      "expected_rows": [
+        {
+          "name": "Georgiy Yermakov",
+          "season": "2024/25",
+          "value": 2700
+        },
+        {
+          "name": "Maksym Mekhaniv",
+          "season": "2024/25",
+          "value": 2700
+        },
+        {
+          "name": "Pavlo Isenko",
+          "season": "2024/25",
+          "value": 2588
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h04",
+      "split": "heldout",
+      "type": "comparison",
+      "kind": "comparison",
+      "question": "Who provided more assists in the 2025/26 Eredivisie, Joey Veerman or Ivan Perišić?",
+      "sql": "SELECT name, season, assists AS value FROM tm.player_season_stats WHERE league='NL1' AND season='2025/26' AND name IN ('Joey Veerman','Ivan Perišić') ORDER BY assists DESC",
+      "expected_rows": [
+        {
+          "name": "Joey Veerman",
+          "season": "2025/26",
+          "value": 14
+        },
+        {
+          "name": "Ivan Perišić",
+          "season": "2025/26",
+          "value": 12
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h05",
+      "split": "heldout",
+      "type": "reports",
+      "kind": "value",
+      "question": "According to the scouting notes, which of the nine leagues had the oldest average player age in 2025/26?",
+      "sql": "SELECT league_name AS name, season, round(avg(age),1) AS value FROM tm.player_season_stats WHERE season='2025/26' GROUP BY league_name, season ORDER BY avg(age) DESC LIMIT 1",
+      "expected_rows": [
+        {
+          "name": "Greek Super League",
+          "season": "2025/26",
+          "value": 28.0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h06",
+      "split": "heldout",
+      "type": "filtered_ranking",
+      "kind": "ranking",
+      "question": "Which 2 players aged 21 or under scored the most goals in the Russian Premier League in 2025/26?",
+      "sql": "SELECT name, season, goals AS value FROM tm.player_season_stats WHERE league='RU1' AND season='2025/26' AND age<=21 AND minutes >= 900 ORDER BY goals DESC NULLS LAST, minutes DESC, name LIMIT 2",
+      "expected_rows": [
+        {
+          "name": "Aleksey Batrakov",
+          "season": "2025/26",
+          "value": 13
+        },
+        {
+          "name": "Matvey Kislyak",
+          "season": "2025/26",
+          "value": 6
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h07",
+      "split": "heldout",
+      "type": "not_enough_data",
+      "kind": "ned",
+      "question": "Which Danish Superliga player had the best pressing numbers in 2025/26?",
+      "sql": "SELECT count(*) AS n FROM information_schema.columns WHERE table_schema='tm' AND table_name='player_season_stats' AND column_name IN ('pressures','pressing','tackles_p90')",
+      "expected_rows": [
+        {
+          "n": 0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h08",
+      "split": "heldout",
+      "type": "not_enough_data",
+      "kind": "ned",
+      "question": "Who scored the most goals in the Belgian Pro League in 2019/20?",
+      "sql": "SELECT count(*) AS n FROM tm.player_season_stats WHERE season='2019/20'",
+      "expected_rows": [
+        {
+          "n": 0
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h09",
+      "split": "heldout",
+      "type": "single_fact",
+      "kind": "value",
+      "question": "Which club did Rafa Silva play for in Liga Portugal in 2023/24?",
+      "sql": "SELECT name, season, club AS value FROM tm.player_season_stats WHERE name='Rafa Silva' AND season='2023/24' AND league='PO1'",
+      "expected_rows": [
+        {
+          "name": "Rafa Silva",
+          "season": "2023/24",
+          "value": "SL Benfica"
+        }
+      ],
+      "scored": true
+    },
+    {
+      "id": "h10",
+      "split": "heldout",
+      "type": "filtered_ranking",
+      "kind": "ranking",
+      "question": "Who were the top 3 attacking midfielders aged 22 or under in the Eredivisie in 2025/26 by goals plus assists per 90, minimum 900 minutes?",
+      "sql": "SELECT name, season, goal_contrib_p90 AS value FROM tm.player_season_stats WHERE league='NL1' AND season='2025/26' AND position_group='attacking_mid' AND age<=22 AND minutes >= 900 ORDER BY goal_contrib_p90 DESC NULLS LAST, minutes DESC, name LIMIT 3",
+      "expected_rows": [
+        {
+          "name": "Oscar Gloukh",
+          "season": "2025/26",
+          "value": 0.692
+        },
+        {
+          "name": "Noé Lebreton",
+          "season": "2025/26",
+          "value": 0.566
+        },
+        {
+          "name": "Jakob Breum",
+          "season": "2025/26",
+          "value": 0.529
+        }
+      ],
+      "scored": true
     }
   ]
 }
