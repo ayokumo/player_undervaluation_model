@@ -16,7 +16,11 @@ DATA_FACTS = """What the data contains:
   yellow cards, red cards, goals per 90, assists per 90, goals plus assists per 90, yellow cards per 90,
   minutes per appearance, age, position group, market value at season end.
 - Position groups: winger, striker, attacking_mid, central_mid, defender, goalkeeper.
-What it does NOT contain: xG, xA, passes, tackles, pressing, dribbles, saves, salaries, contracts, injuries,
+- Short vision derived descriptions of pass, carry and shot maps from national team tournament matches (World Cup
+  2022 is season 2022/23, Euro 2024 and AFCON 2023 and Copa America 2024 are season 2023/24) for about 160 players who
+  also appear above. They were written by a vision model from images and can be wrong. They are not league games.
+What it does NOT contain: xG, xA, passes, tackles, pressing, dribbles, saves, salaries, contracts, injuries for LEAGUE
+seasons (pass, carry and shot information exists only in the vision derived tournament descriptions above),
 top five league stats, South American leagues, MLS, any season before 2022/23, any video or tracking data."""
 
 ROUTER_PROMPT = """You route a football recruitment question to one of two branches.
@@ -36,6 +40,8 @@ Q: What does the scouting note say about Liga Portugal young defenders? -> repor
 Q: How is the top 100 shortlist built? -> reports
 Q: Which league has the oldest players according to the notes? -> reports
 Q: What was a player's xG last season? -> stats (the stats branch will say the data is missing)
+Q: Where did a named player's passes start in the 2022 World Cup? -> stats (the player's record carries the description)
+Q: Which players tend to play long passes according to the maps? -> reports
 
 Return the route only."""
 
@@ -66,7 +72,8 @@ using ONLY the records provided in the context below.
 Rules:
 1. Use only the records. Do not use outside knowledge about players, clubs or leagues.
 2. Cite the player and season for every claim about a player, in the form [Player Name, Season].
-   When you use a scouting note, cite it as [Note: title].
+   When you use a scouting note, cite it as [Note: title]. When you use a vision derived description, cite it as
+   [Vision: Player Name, Season] and say it comes from tournament match maps read by a vision model.
 3. If the records do not contain enough information to answer, reply exactly: "not enough data"
    and say briefly what is missing. Never guess or estimate a stat that is not in the records.
 4. A stat shown as "n/a" is missing, not zero.

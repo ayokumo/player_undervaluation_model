@@ -72,9 +72,10 @@ def lookup_players(names: list[str], season: str | None = None, league: str | No
     return rows
 
 
-def vector_search(embedding: list[float], doc_type: str, k: int = 3, filters: dict | None = None) -> list[dict]:
-    """Nearest documents by cosine distance, with optional metadata filters."""
-    where, args = ["doc_type = %s"], [doc_type]
+def vector_search(embedding: list[float], doc_type: str | tuple, k: int = 3, filters: dict | None = None) -> list[dict]:
+    """Nearest documents by cosine distance, with optional metadata filters. doc_type may be one type or a tuple."""
+    types = [doc_type] if isinstance(doc_type, str) else list(doc_type)
+    where, args = ["doc_type = ANY(%s)"], [types]
     for key in ("league", "season", "position_group"):
         if filters and filters.get(key):
             where.append(f"{key} = %s")
@@ -87,3 +88,15 @@ def vector_search(embedding: list[float], doc_type: str, k: int = 3, filters: di
            f"FROM rag.documents WHERE {' AND '.join(where)} ORDER BY embedding <=> %s::vector LIMIT {int(k)}")
     with connect() as c:
         return c.execute(sql, [vec, *args, vec]).fetchall()
+
+
+def vision_docs(pairs: list[tuple[int, str]]) -> list[dict]:
+    """Vision derived documents for (player_id, season) pairs, if they exist."""
+    if not pairs:
+        return []
+    out = []
+    with connect() as c:
+        for pid, season in pairs:
+            out += c.execute("SELECT doc_id, name, season, text FROM rag.documents WHERE doc_type = 'vision_description' "
+                             "AND player_id = %s AND season = %s", [pid, season]).fetchall()
+    return out

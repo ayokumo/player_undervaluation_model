@@ -1,6 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "rules": [
+    "split vision = 8 extra questions answerable only from the vision derived documents, expected answers come from the rule based tags computed from StatsBomb events (tm.vision_truth).",
     "Every expected answer comes from running the saved SQL against tm.player_season_stats.",
     "split tune = questions used while tuning prompts. split heldout = never used while tuning, scored once on frozen prompts.",
     "not_enough_data questions: the saved SQL returns 0 (the stat, league or season is not in the data)."
@@ -390,6 +391,181 @@
         }
       ],
       "scored": true
+    },
+    {
+      "id": "v01",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the Africa Cup of Nations 2023 pass maps for Nicolas Pépé, did his passes mostly start in his own half, in the final third, or was it balanced? Answer with one of: own half, final third, balanced.",
+      "sql": "SELECT tm_name AS name, season, tag_passing_territory AS value FROM tm.vision_truth WHERE tm_player_id = 343052 AND competition = 'Africa Cup of Nations 2023'",
+      "options": [
+        "own half",
+        "final third",
+        "balanced"
+      ],
+      "expected_rows": [
+        {
+          "name": "Nicolas Pépé",
+          "season": "2023/24",
+          "value": "mostly_final_third"
+        }
+      ],
+      "scored": true,
+      "expected_option": "final third"
+    },
+    {
+      "id": "v02",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the FIFA World Cup 2022 pass maps for João Mário, did his passes mostly start in his own half, in the final third, or was it balanced? Answer with one of: own half, final third, balanced.",
+      "sql": "SELECT tm_name AS name, season, tag_passing_territory AS value FROM tm.vision_truth WHERE tm_player_id = 149729 AND competition = 'FIFA World Cup 2022'",
+      "options": [
+        "own half",
+        "final third",
+        "balanced"
+      ],
+      "expected_rows": [
+        {
+          "name": "João Mário",
+          "season": "2022/23",
+          "value": "mostly_final_third"
+        }
+      ],
+      "scored": true,
+      "expected_option": "final third"
+    },
+    {
+      "id": "v03",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the FIFA World Cup 2022 pass maps for Wajdi Kechrida, were his passes mostly forward, mostly sideways or back, or mixed? Answer with one of: forward, sideways or back, mixed.",
+      "sql": "SELECT tm_name AS name, season, tag_pass_direction AS value FROM tm.vision_truth WHERE tm_player_id = 407885 AND competition = 'FIFA World Cup 2022'",
+      "options": [
+        "forward",
+        "sideways or back",
+        "mixed"
+      ],
+      "expected_rows": [
+        {
+          "name": "Wajdi Kechrida",
+          "season": "2022/23",
+          "value": "mixed"
+        }
+      ],
+      "scored": true,
+      "expected_option": "mixed"
+    },
+    {
+      "id": "v04",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the Copa America 2024 pass maps for Ángel Di María, were his passes mostly forward, mostly sideways or back, or mixed? Answer with one of: forward, sideways or back, mixed.",
+      "sql": "SELECT tm_name AS name, season, tag_pass_direction AS value FROM tm.vision_truth WHERE tm_player_id = 45320 AND competition = 'Copa America 2024'",
+      "options": [
+        "forward",
+        "sideways or back",
+        "mixed"
+      ],
+      "expected_rows": [
+        {
+          "name": "Ángel Di María",
+          "season": "2023/24",
+          "value": "mixed"
+        }
+      ],
+      "scored": true,
+      "expected_option": "mixed"
+    },
+    {
+      "id": "v05",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the UEFA Euro 2024 pass maps for Gernot Trauner, was his passing short, medium or long? Answer with one of: short, medium, long.",
+      "sql": "SELECT tm_name AS name, season, tag_pass_length AS value FROM tm.vision_truth WHERE tm_player_id = 59145 AND competition = 'UEFA Euro 2024'",
+      "options": [
+        "short",
+        "medium",
+        "long"
+      ],
+      "expected_rows": [
+        {
+          "name": "Gernot Trauner",
+          "season": "2023/24",
+          "value": "medium"
+        }
+      ],
+      "scored": true,
+      "expected_option": "medium"
+    },
+    {
+      "id": "v06",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the Copa America 2024 pass maps for Roberto Fernández, was his passing short, medium or long? Answer with one of: short, medium, long.",
+      "sql": "SELECT tm_name AS name, season, tag_pass_length AS value FROM tm.vision_truth WHERE tm_player_id = 598101 AND competition = 'Copa America 2024'",
+      "options": [
+        "short",
+        "medium",
+        "long"
+      ],
+      "expected_rows": [
+        {
+          "name": "Roberto Fernández",
+          "season": "2023/24",
+          "value": "medium"
+        }
+      ],
+      "scored": true,
+      "expected_option": "medium"
+    },
+    {
+      "id": "v07",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the FIFA World Cup 2022 shot maps for Issam Jebali, were his shots mostly from close range, from long range, or mixed? Answer with one of: close, long range, mixed.",
+      "sql": "SELECT tm_name AS name, season, tag_shooting AS value FROM tm.vision_truth WHERE tm_player_id = 122635 AND competition = 'FIFA World Cup 2022'",
+      "options": [
+        "close",
+        "long range",
+        "mixed"
+      ],
+      "expected_rows": [
+        {
+          "name": "Issam Jebali",
+          "season": "2022/23",
+          "value": "shots_from_close"
+        }
+      ],
+      "scored": true,
+      "expected_option": "close"
+    },
+    {
+      "id": "v08",
+      "split": "vision",
+      "type": "vision",
+      "kind": "choice",
+      "question": "In the FIFA World Cup 2022 carry maps for Edson Álvarez, did he make several carries into the final third? Answer with one of: yes, no.",
+      "sql": "SELECT tm_name AS name, season, tag_carrying AS value FROM tm.vision_truth WHERE tm_player_id = 401356 AND competition = 'FIFA World Cup 2022'",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "expected_rows": [
+        {
+          "name": "Edson Álvarez",
+          "season": "2022/23",
+          "value": "few_carries_into_final_third"
+        }
+      ],
+      "scored": true,
+      "expected_option": "no"
     }
   ]
 }

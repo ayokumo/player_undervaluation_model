@@ -188,3 +188,49 @@ python -m eval.run_eval --split heldout
 |---|---|---|---|---|
 | 2026-10-15 (held out, 10 questions) | 8,177 | 9/10 (90%) | 17/17 | 2/2 |
 | 2026-10-15 (tune, 10 questions) | 8,177 | 10/10 | 17/17 | 3/3 |
+
+## Computer vision on past player actions (Step 4): built and measured 2026-10-15
+
+Event data: [StatsBomb open data](https://github.com/statsbomb/open-data) (World Cup 2022, Euro 2024, Africa Cup of Nations 2023, Copa America 2024). Credit: StatsBomb. These are **national team tournament matches, not league games**, because the free StatsBomb data has no match events for the nine source leagues.
+
+What it does: renders pass, carry and shot maps for each player (mplsoccer), has a vision capable model (Claude Sonnet 5.5) describe each image and tag it from fixed lists, stores the descriptions in the pgvector index as extra documents linked to the player and season, and lets the assistant cite them as `[Vision: Player, Season]`.
+
+| Step | File | Output |
+|---|---|---|
+| Link tournament players to league players | `rag/vision/link_players.py` | `results/vision/player_links.csv`: 215 players linked (name match of 92 or more AND same nationality); the 2024 entries are one season per tournament |
+| Extract actions | `rag/vision/extract_actions.py` | 37,945 passes, carries and shots (data/interim, not committed) |
+| Rule based truth | `rag/vision/summarise.py` | `results/vision/action_summary.csv` with numbers and tags (thresholds fixed before any comparison) |
+| Images | `rag/vision/render.py` | 164 images in `figures/vision/` (players with 40 or more passes or 3 or more shots) |
+| Vision descriptions | `rag/vision/describe.py` | `results/vision/descriptions.jsonl`, 162 of 164 images (2 failed structured output validation twice and are left out) |
+| Index | `rag/vision/index_vision.py` | 162 documents in pgvector, plus `tm.vision_truth` |
+| Check | `rag/vision/check_tags.py` | `results/vision/tag_agreement.md` |
+
+### Do the vision tags match the event data?
+
+| Tag | Vision model agrees with event data | Always guessing the most common tag |
+|---|---|---|
+| Passing territory | 66% | 41% |
+| Pass direction | 49% | 43% |
+| Pass length | 73% | 62% |
+| Carries into final third | 72% | 86% |
+| Shooting distance | 67% | 46% |
+
+Passing territory and shooting distance are clearly better than guessing. Pass direction is barely better, and the carries tag is **worse** than always answering "few carries". The descriptions are therefore weak evidence, and every vision document says "Vision derived, may be inaccurate".
+
+### Does it help the assistant? (eval/results.md, run 2026-10-15)
+
+| Question set | Without vision documents | With vision documents |
+|---|---|---|
+| Original 20 questions | 19/20 | 19/20 |
+| 8 vision questions (answers from the event data tags) | 0/8 | 4/8 |
+
+* **On the original 20 questions the vision documents did not help.** Those questions are about league season numbers and the vision documents hold nothing about them. Both conditions miss the same question (h05, a strict scoring miss explained above).
+* On the 8 questions that can only be answered from the maps, the assistant correctly says "not enough data" without the documents (counted wrong, because the expected answer is a choice), and gets 4 of 8 right with them. That is about the accuracy of the vision tags, with 2 to 3 answer options per question, so it is only modestly above guessing. Eight questions is a very small sample.
+* The 8 players were picked at random (seed 7) before any run. Prompts were updated once to describe the vision documents, so these runs used a newer prompt hash than the 2026-10-15 held out result, and they are not a clean held out measurement.
+
+### Limitations
+* Tournament matches are a different setting from league football, and a player has 1 to 7 matches in the sample.
+* Only 215 of 8,177 league players in the index have a linked tournament record.
+* The vision model reads small images and its tags are often wrong in the ways shown above. Do not treat the descriptions as scouting facts.
+
+Run order: `python -m rag.build_index` first (it rebuilds the index table), then `python -m rag.vision.link_players`, `extract_actions`, `summarise`, `render`, `describe`, `index_vision`, `check_tags`, and `python -m eval.build_benchmark` (adds the 8 vision questions), then `python -m eval.run_eval --split vision` and `--split vision --no-vision`.

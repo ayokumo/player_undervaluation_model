@@ -69,24 +69,69 @@ QUESTIONS = [
 ]
 
 
+def vision_questions(conn) -> list[dict]:
+    """8 extra questions answerable only from the vision derived documents. The players are picked at random
+    (seed 7) from tm.vision_truth before any assistant run, one attribute per question."""
+    import random
+    rng = random.Random(7)
+    spec = [  # (tag column, question template, {tag: option text}, options in question)
+        ("tag_passing_territory", "In the {comp} pass maps for {name}, did his passes mostly start in his own half, in the final third, or was it balanced? Answer with one of: own half, final third, balanced.",
+         {"mostly_own_half": "own half", "mostly_final_third": "final third", "balanced": "balanced"}),
+        ("tag_passing_territory", "In the {comp} pass maps for {name}, did his passes mostly start in his own half, in the final third, or was it balanced? Answer with one of: own half, final third, balanced.",
+         {"mostly_own_half": "own half", "mostly_final_third": "final third", "balanced": "balanced"}),
+        ("tag_pass_direction", "In the {comp} pass maps for {name}, were his passes mostly forward, mostly sideways or back, or mixed? Answer with one of: forward, sideways or back, mixed.",
+         {"mostly_forward": "forward", "mostly_sideways_or_back": "sideways or back", "mixed": "mixed"}),
+        ("tag_pass_direction", "In the {comp} pass maps for {name}, were his passes mostly forward, mostly sideways or back, or mixed? Answer with one of: forward, sideways or back, mixed.",
+         {"mostly_forward": "forward", "mostly_sideways_or_back": "sideways or back", "mixed": "mixed"}),
+        ("tag_pass_length", "In the {comp} pass maps for {name}, was his passing short, medium or long? Answer with one of: short, medium, long.",
+         {"short": "short", "medium": "medium", "long": "long"}),
+        ("tag_pass_length", "In the {comp} pass maps for {name}, was his passing short, medium or long? Answer with one of: short, medium, long.",
+         {"short": "short", "medium": "medium", "long": "long"}),
+        ("tag_shooting", "In the {comp} shot maps for {name}, were his shots mostly from close range, from long range, or mixed? Answer with one of: close, long range, mixed.",
+         {"shots_from_close": "close", "shots_from_range": "long range", "shots_mixed": "mixed"}),
+        ("tag_carrying", "In the {comp} carry maps for {name}, did he make several carries into the final third? Answer with one of: yes, no.",
+         {"carries_into_final_third": "yes", "few_carries_into_final_third": "no"}),
+    ]
+    used, out = set(), []
+    for i, (col, tmpl, mapping) in enumerate(spec, 1):
+        rows = conn.execute(f"SELECT tm_player_id, tm_name, season, competition, {col} FROM tm.vision_truth WHERE {col} = ANY(%s) ORDER BY tm_player_id", [list(mapping)]).fetchall()
+        rows = [r for r in rows if r[0] not in used]
+        pid, name, season, comp, tag = rng.choice(rows)
+        used.add(pid)
+        out.append(dict(id=f"v{i:02d}", split="vision", type="vision", kind="choice", question=tmpl.format(comp=comp, name=name),
+                        sql=f"SELECT tm_name AS name, season, {col} AS value FROM tm.vision_truth WHERE tm_player_id = {pid} AND competition = '{comp}'",
+                        options=list(mapping.values())))
+    return out
+
+
 def main() -> None:
     out = []
     with psycopg.connect(db_url()) as c:
-        for q in QUESTIONS:
+        has_vision = c.execute("SELECT to_regclass('tm.vision_truth')").fetchone()[0] is not None
+        for q in QUESTIONS + (vision_questions(c) if has_vision else []):
             cur = c.execute(q["sql"])
             cols = [d.name for d in cur.description]
             rows = [dict(zip(cols, [float(v) if hasattr(v, "as_tuple") else v for v in r])) for r in cur.fetchall()]
             q = dict(q, expected_rows=rows, scored=True)
+            if q["kind"] == "choice":
+                tag = rows[0]["value"]
+                col_map = {"tag_passing_territory": {"mostly_own_half": "own half", "mostly_final_third": "final third", "balanced": "balanced"},
+                           "tag_pass_direction": {"mostly_forward": "forward", "mostly_sideways_or_back": "sideways or back", "mixed": "mixed"},
+                           "tag_pass_length": {"short": "short", "medium": "medium", "long": "long"},
+                           "tag_shooting": {"shots_from_close": "close", "shots_from_range": "long range", "shots_mixed": "mixed"},
+                           "tag_carrying": {"carries_into_final_third": "yes", "few_carries_into_final_third": "no"}}
+                col = q["sql"].split("AS value")[0].split(",")[-1].strip()
+                q["expected_option"] = col_map[col][tag]
             if q["kind"] == "ned":
                 assert rows[0]["n"] == 0, f"{q['id']}: expected an empty result but got {rows}"
             out.append(q)
     OUT.write_text(json.dumps({
-        "version": 2,
-        "rules": ["Every expected answer comes from running the saved SQL against tm.player_season_stats.",
+        "version": 3,
+        "rules": ["split vision = 8 extra questions answerable only from the vision derived documents, expected answers come from the rule based tags computed from StatsBomb events (tm.vision_truth).","Every expected answer comes from running the saved SQL against tm.player_season_stats.",
                   "split tune = questions used while tuning prompts. split heldout = never used while tuning, scored once on frozen prompts.",
                   "not_enough_data questions: the saved SQL returns 0 (the stat, league or season is not in the data)."],
         "questions": out}, indent=2, ensure_ascii=False))
-    print(f"wrote {len(out)} questions ({sum(q['split']=='tune' for q in out)} tune, {sum(q['split']=='heldout' for q in out)} heldout)")
+    print(f"wrote {len(out)} questions ({sum(q['split']=='tune' for q in out)} tune, {sum(q['split']=='heldout' for q in out)} heldout, {sum(q['split']=='vision' for q in out)} vision)")
 
 
 if __name__ == "__main__":

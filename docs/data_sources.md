@@ -29,3 +29,10 @@ clubs.domestic_competition_id is the CURRENT league, not historical.
 
 ### Not usable / removed sources
 FBref advanced stats: removed Jan 2026 (StatsPerform ended its data feed). Basic stats only remain.
+
+## StatsBomb open data (Step 4)
+Source: https://github.com/statsbomb/open-data (events, lineups, matches as JSON). Credit StatsBomb when using it.
+Used: FIFA World Cup 2022 (64 matches), UEFA Euro 2024 (51), Africa Cup of Nations 2023 (52), Copa America 2024 (32).
+Cached in data/raw/statsbomb/ (gitignored). The nine source leagues are not in the free data.
+Season label for a tournament is the club season that just finished when it started (World Cup 2022 = 2022/23,
+Euro 2024, AFCON 2023 and Copa America 2024 = 2023/24).

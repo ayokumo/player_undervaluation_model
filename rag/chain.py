@@ -19,7 +19,7 @@ def _graph():
         from langchain_anthropic import ChatAnthropic
         from rag.embedder import embed
         llm = ChatAnthropic(model=os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5-5"), max_tokens=800)
-        _GRAPH = build_graph(llm, embed_fn=embed)
+        _GRAPH = build_graph(llm, embed_fn=embed, use_vision=os.environ.get("USE_VISION", "1") != "0")
     return _GRAPH
 
 

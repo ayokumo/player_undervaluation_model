@@ -29,7 +29,7 @@ class State(TypedDict, total=False):
     sources: list[str]
 
 
-def build_graph(llm, embed_fn: Optional[Callable[[list[str]], list[list[float]]]] = None):
+def build_graph(llm, embed_fn: Optional[Callable[[list[str]], list[list[float]]]] = None, use_vision: bool = True):
     router_llm = llm.with_structured_output(Route)
     filter_llm = llm.with_structured_output(StatsQuery)
 
@@ -62,15 +62,26 @@ def build_graph(llm, embed_fn: Optional[Callable[[list[str]], list[list[float]]]
             doc = build_profile(r)
             extra = f"\nRank {i} by {q['order_by']}: {r.get(q['order_by'])}" if q["intent"] == "rank" else ""
             records.append({"doc_id": doc.doc_id, "text": doc.text + extra, "cite": f"[{r['name']}, {r['season']}]"})
+        if use_vision:
+            seen = set()
+            pairs = [(r["player_id"], r["season"]) for r in rows if not ((r["player_id"], r["season"]) in seen or seen.add((r["player_id"], r["season"])))]
+            for v in store.vision_docs(pairs):
+                records.append({"doc_id": v["doc_id"], "text": v["text"], "cite": f"[Vision: {v['name']}, {v['season']}]"})
         return {"query": q, "records": records, "abstain_reason": None if records else "no player records match"}
 
     def reports_branch(state: State) -> State:
         if embed_fn is None:
             return {"records": [], "abstain_reason": "the reports index is not available"}
         vec = embed_fn([state["question"]])[0]
-        hits = store.vector_search(vec, "scouting_note", k=3)
+        types = ("scouting_note", "vision_description") if use_vision else ("scouting_note",)
+        hits = store.vector_search(vec, types, k=4)
         hits = [h for h in hits if float(h["similarity"]) >= 0.2]
-        records = [{"doc_id": h["doc_id"], "text": f"Note title: {h['title']}\n{h['text']}", "cite": f"[Note: {h['title']}]"} for h in hits]
+        records = []
+        for h in hits:
+            if h["doc_type"] == "vision_description":
+                records.append({"doc_id": h["doc_id"], "text": h["text"], "cite": f"[Vision: {h['name']}, {h['season']}]"})
+            else:
+                records.append({"doc_id": h["doc_id"], "text": f"Note title: {h['title']}\n{h['text']}", "cite": f"[Note: {h['title']}]"})
         return {"records": records, "abstain_reason": None if records else "no scouting note matches"}
 
     def answer(state: State) -> State:

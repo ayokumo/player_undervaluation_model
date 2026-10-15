@@ -58,3 +58,10 @@ Decision: the assistant reads Transfermarkt player seasons from PostgreSQL (no s
 Reason: FBref advanced stats are gone, StatsBomb open data covers few of these leagues, and the Transfermarkt table is already loaded and linked.
 Decision: the model fills a fixed schema, code builds the SQL. The 20 benchmark questions are split 10 tune and 10 heldout before any run.
 Resolved 2026-10-15: embedding model files were downloaded by the user (Hugging Face is blocked from the build environment) and the API key was supplied. Benchmark run: tune 10 of 10, held out 9 of 10.
+
+## 2026-10-15: Computer vision component (Step 4)
+Decision: use StatsBomb open event data from four national team tournaments, because the free data has no events for the nine source leagues.
+Decision: players are linked to the league index by name (ratio 92 or more) AND nationality; one season per tournament.
+Decision: Claude Sonnet 5.5 describes the images and picks tags from fixed lists. Rule based tags from the event data are the ground truth and thresholds were fixed before comparison.
+Result: tag agreement 49% to 73% (carries worse than guessing). Vision documents did not change accuracy on the 20 league questions (19/20 both ways). On 8 vision only questions: 0/8 without, 4/8 with.
+Not retuned to look better.

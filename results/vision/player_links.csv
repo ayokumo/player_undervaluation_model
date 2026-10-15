@@ -1,0 +1,216 @@
+sb_player_id,sb_name,competition,season,national_team,tm_player_id,tm_name,league,club,position_group,name_score,n_matches,match_ids
+23892,Aboubakary Koita,Africa Cup of Nations 2023,2023/24,Mauritania,422377,Aboubakary Koita,BE1,Sint-Truidense VV,winger,100.0,4,3920392 3920403 3920415 3922241
+99280,Adamo Nagalo,Africa Cup of Nations 2023,2023/24,Burkina Faso,800976,Adamo Nagalo,DK1,FC Nordsjaelland,defender,100.0,2,3920402 3922244
+39559,Aguibou Camara,Africa Cup of Nations 2023,2023/24,Guinea,543529,Aguibou Camara,GR1,APS Atromitos Athinon,attacking_mid,100.0,5,3920389 3920401 3920412 3922239 3922356
+2989,Alexander Djiku,Africa Cup of Nations 2023,2023/24,Ghana,250844,Alexander Djiku,TR1,Fenerbahce,defender,100.0,3,3920387 3920396 3920410
+27434,Alhassan Yusuf,Africa Cup of Nations 2023,2023/24,Nigeria,600481,Alhassan Yusuf,BE1,Royal Antwerp FC,central_mid,100.0,4,3920386 3922321 3922837 3923881
+3587,Arthur Masuaku,Africa Cup of Nations 2023,2023/24,Congo DR,181380,Arthur Masuaku,TR1,Beşiktaş Jimnastik Kulübü,defender,100.0,6,3920395 3920405 3920418 3922240 3922356 3922838
+5229,Ayoub El Kaabi,Africa Cup of Nations 2023,2023/24,Morocco,521127,Ayoub El Kaabi,GR1,Olympiakos Syndesmos Filathlon Peiraios,striker,100.0,4,3920394 3920405 3920419 3922243
+156734,Bilal El Khannous,Africa Cup of Nations 2023,2023/24,Morocco,654982,Bilal El Khannouss,BE1,KRC Genk,attacking_mid,97.1,3,3920394 3920405 3920419
+3806,Bright Osayi-Samuel,Africa Cup of Nations 2023,2023/24,Nigeria,358948,Bright Osayi-Samuel,TR1,Fenerbahce,defender,100.0,5,3920386 3920398 3920409 3922238 3922837
+106070,Bruno Alberto Langa,Africa Cup of Nations 2023,2023/24,Mozambique,631472,Bruno Langa,PO1,GD Chaves,defender,100.0,3,3920385 3920399 3920410
+18651,Carlos Manuel Cardoso Mané,Africa Cup of Nations 2023,2023/24,Guinea-Bissau,182711,Carlos Mané,TR1,Kayserispor,winger,100.0,2,3920384 3920397
+3139,Chidozie Awaziem,Africa Cup of Nations 2023,2023/24,Nigeria,358143,Chidozie Awaziem,PO1,Boavista FC,defender,100.0,1,3920409
+3709,Daniel Amartey,Africa Cup of Nations 2023,2023/24,Ghana,214056,Daniel Amartey,TR1,Beşiktaş Jimnastik Kulübü,defender,100.0,1,3920410
+8349,Deroy Duarte,Africa Cup of Nations 2023,2023/24,Cape Verde Islands,432852,Deroy Duarte,NL1,Fortuna Sittardia Combinatie,central_mid,100.0,3,3920387 3920399 3922241
+5237,Hakim Ziyech,Africa Cup of Nations 2023,2023/24,Morocco,217111,Hakim Ziyech,TR1,Galatasaray,winger,100.0,3,3920394 3920405 3920419
+39174,Ismael Saibari,Africa Cup of Nations 2023,2023/24,Morocco,702869,Ismael Saibari,NL1,PSV Eindhoven,attacking_mid,100.0,2,3920419 3922243
+106681,Ismahila Ouédraogo,Africa Cup of Nations 2023,2023/24,Burkina Faso,878247,Ismahila Ouédraogo,GR1,Panserraikos Serres,central_mid,100.0,3,3920402 3920414 3922244
+4939,Joris Kayembe,Africa Cup of Nations 2023,2023/24,Congo DR,129586,Joris Kayembe,BE1,KRC Genk,defender,100.0,2,3922356 3923880
+16546,Joseph Paintsil,Africa Cup of Nations 2023,2023/24,Ghana,534435,Joseph Paintsil,BE1,KRC Genk,winger,100.0,3,3920387 3920396 3920410
+7360,Julian Jeanvier,Africa Cup of Nations 2023,2023/24,Guinea,134277,Julian Jeanvier,TR1,Kayserispor,defender,100.0,4,3920389 3920401 3922239 3922356
+5830,Kenneth Josiah Omeruo,Africa Cup of Nations 2023,2023/24,Nigeria,131708,Kenneth Omeruo,TR1,Kasimpasa,defender,100.0,5,3920398 3920409 3922238 3922321 3922837
+103207,Loide António Augusto,Africa Cup of Nations 2023,2023/24,Angola,696693,Loide Augusto,TR1,Alanyaspor,winger,100.0,1,3920390
+23420,Lubambo Musonda,Africa Cup of Nations 2023,2023/24,Zambia,333859,Lubambo Musonda,DK1,Silkeborg IF,defender,100.0,3,3920395 3920406 3920419
+4416,Max Gradel,Africa Cup of Nations 2023,2023/24,Côte d'Ivoire,28140,Max Gradel,TR1,Gaziantep FK,winger,100.0,5,3920408 3922242 3922659 3922838 3923881
+43920,Mohamed Konaté,Africa Cup of Nations 2023,2023/24,Burkina Faso,457743,Mohamed Konaté,RU1,RFK Akhmat Grozny,striker,100.0,3,3920392 3920402 3922244
+35285,Mory Konaté,Africa Cup of Nations 2023,2023/24,Guinea,364370,Mory Konaté,BE1,KV Mechelen,central_mid,100.0,2,3920389 3922239
+16015,Moumi Ngamaleu,Africa Cup of Nations 2023,2023/24,Cameroon,266768,Nicolas Moumi Ngamaleu,RU1,FK Dinamo Moskva,winger,100.0,2,3920400 3922238
+3013,Nicolas Pépé,Africa Cup of Nations 2023,2023/24,Côte d'Ivoire,343052,Nicolas Pépé,TR1,Trabzonspor,winger,100.0,5,3920384 3920398 3920408 3922242 3922659
+10530,Jules Olivier Ntcham,Africa Cup of Nations 2023,2023/24,Cameroon,224088,Olivier Ntcham,TR1,Samsunspor,central_mid,100.0,4,3920389 3920400 3920413 3922238
+196109,Ousmane Diomande,Africa Cup of Nations 2023,2023/24,Côte d'Ivoire,974982,Ousmane Diomande,PO1,Sporting CP,defender,100.0,2,3920384 3920398
+24478,Paul Onuachu,Africa Cup of Nations 2023,2023/24,Nigeria,272855,Paul Onuachu,TR1,Trabzonspor,striker,100.0,4,3920386 3920398 3922238 3922321
+38345,Ramiz Larbi Zerrouki,Africa Cup of Nations 2023,2023/24,Algeria,416660,Ramiz Zerrouki,NL1,Feyenoord Rotterdam,central_mid,100.0,3,3920390 3920402 3920415
+38862,Raphael Nwadike,Africa Cup of Nations 2023,2023/24,Nigeria,699783,Raphael Onyedika,BE1,Club Brugge KV,central_mid,100.0,1,3920409
+40485,Ryan Isaac Mendes da Graça,Africa Cup of Nations 2023,2023/24,Cape Verde Islands,111627,Ryan Mendes,TR1,Fatih Karagümrük,winger,100.0,5,3920387 3920399 3920411 3922241 3922658
+7295,Sikou Niakate,Africa Cup of Nations 2023,2023/24,Mali,413118,Sikou Niakaté,PO1,SC Braga,defender,100.0,5,3920391 3920404 3920417 3922244 3922659
+24826,Simon Banza,Africa Cup of Nations 2023,2023/24,Congo DR,344869,Simon Banza,PO1,SC Braga,striker,100.0,5,3920395 3922240 3922356 3922838 3923880
+18724,Sofiane Feghouli,Africa Cup of Nations 2023,2023/24,Algeria,57162,Sofiane Feghouli,TR1,Fatih Karagümrük,central_mid,100.0,1,3920402
+8050,Tarik Tissoudali,Africa Cup of Nations 2023,2023/24,Morocco,245228,Tarik Tissoudali,BE1,KAA Gent,striker,100.0,1,3920419
+5261,Mahmoud Ibrahim Hassan,Africa Cup of Nations 2023,2023/24,Egypt,234189,Trezeguet,TR1,Trabzonspor,winger,100.0,4,3920385 3920396 3920411 3922240
+11174,Vincent Aboubakar,Africa Cup of Nations 2023,2023/24,Cameroon,147487,Vincent Aboubakar,TR1,Beşiktaş Jimnastik Kulübü,striker,100.0,1,3922238
+105944,Wajdi Kechrida,Africa Cup of Nations 2023,2023/24,Tunisia,407885,Wajdi Kechrida,GR1,APS Atromitos Athinon,defender,100.0,3,3920393 3920404 3920416
+15481,Alexander Callens,Copa America 2024,2023/24,Peru,147462,Alexander Callens,GR1,Athlitiki Enosi Konstantinoupoleos,defender,100.0,3,3939970 3939978 3939986
+44703,Alistair Johnston,Copa America 2024,2023/24,Canada,637446,Alistair Johnston,SC1,Celtic FC,defender,100.0,6,3939969 3939978 3939985 3942229 3942785 3943076
+28567,Carlos Cuesta,Copa America 2024,2023/24,Colombia,474589,Carlos Cuesta,BE1,KRC Genk,defender,100.0,5,3939984 3939991 3942416 3942852 3943077
+27423,Daniel Muñoz,Copa America 2024,2023/24,Colombia,493003,Daniel Muñoz,BE1,KRC Genk,defender,100.0,5,3939975 3939984 3939991 3942416 3942852
+3494,Davinson Sánchez,Copa America 2024,2023/24,Colombia,341429,Davinson Sánchez,TR1,Galatasaray,defender,100.0,6,3939975 3939984 3939991 3942416 3942852 3943077
+33015,Evanilson,Copa America 2024,2023/24,Brazil,711337,Evanilson,PO1,FC Porto,striker,100.0,1,3942415
+10290,Fabián Balbuena,Copa America 2024,2023/24,Paraguay,285548,Fabián Balbuena,RU1,FK Dinamo Moskva,defender,100.0,3,3939975 3939983 3939992
+5600,Francisco Calvo,Copa America 2024,2023/24,Costa Rica,188470,Francisco Calvo,TR1,Konyaspor,defender,100.0,3,3939976 3939984 3939992
+27896,Gerardo Arteaga,Copa America 2024,2023/24,Mexico,469718,Gerardo Arteaga,BE1,KRC Genk,defender,100.0,3,3939971 3939979 3939988
+8817,Jhon Andrés Córdoba Copete,Copa America 2024,2023/24,Colombia,185245,Jhon Córdoba,RU1,FK Krasnodar,striker,100.0,6,3939975 3939984 3939991 3942416 3942852 3943077
+11162,Jhonder Cádiz,Copa America 2024,2023/24,Venezuela,271256,Jhonder Cádiz,PO1,FC Famalicão,striker,100.0,3,3939972 3939979 3942229
+28723,Jorge Andrés Carrascal Guardo,Copa America 2024,2023/24,Colombia,354145,Jorge Carrascal,RU1,FK Dinamo Moskva,attacking_mid,100.0,3,3939991 3942416 3943077
+24730,Lucas Olaza,Copa America 2024,2023/24,Uruguay,216240,Lucas Olaza,RU1,FK Krasnodar,defender,100.0,2,3939982 3943076
+28825,Luis Chávez,Copa America 2024,2023/24,Mexico,331059,Luis Chávez,RU1,FK Dinamo Moskva,central_mid,100.0,3,3939971 3939979 3939988
+36251,Manfred Ugalde,Copa America 2024,2023/24,Costa Rica,645173,Manfred Ugalde,NL1,FC Twente Enschede,striker,100.0,2,3939976 3939984
+3090,Nicolás Hernán Otamendi,Copa America 2024,2023/24,Argentina,54781,Nicolás Otamendi,PO1,SL Benfica,defender,100.0,5,3939969 3939986 3942228 3942785 3943077
+130731,Oliver Sonne,Copa America 2024,2023/24,Peru,541628,Oliver Sonne,DK1,Silkeborg IF,defender,100.0,2,3939970 3939986
+26280,Orbelín Pineda,Copa America 2024,2023/24,Mexico,334042,Orbelín Pineda,GR1,Athlitiki Enosi Konstantinoupoleos,central_mid,100.0,3,3939971 3939979 3939988
+405926,Renaldo Cephas,Copa America 2024,2023/24,Jamaica,879028,Renaldo Cephas,TR1,MKE Ankaragücü,winger,100.0,3,3939971 3939980 3939987
+47055,Roberto Carlos Fernández Toro,Copa America 2024,2023/24,Bolivia,598101,Roberto Fernández,RU1,FK Baltika,defender,100.0,2,3939974 3939982
+31053,Santiago Giménez,Copa America 2024,2023/24,Mexico,552955,Santiago Gimenez,NL1,Feyenoord Rotterdam,striker,100.0,3,3939971 3939979 3939988
+25078,Thelonius Bair,Copa America 2024,2023/24,Canada,501709,Theo Bair,SC1,Motherwell FC,striker,100.0,1,3943076
+30944,Víctor Alejandro Dávila Zavala,Copa America 2024,2023/24,Chile,366143,Víctor Dávila,RU1,PFK CSKA Moskva,striker,100.0,3,3939970 3939977 3939985
+8212,Wendell,Copa America 2024,2023/24,Brazil,228433,Wendell,PO1,FC Porto,defender,100.0,2,3939983 3939991
+2995,Ángel Di María,Copa America 2024,2023/24,Argentina,45320,Ángel Di María,PO1,SL Benfica,winger,100.0,5,3939969 3939977 3939986 3942785 3943077
+3281,Aaron Mooy,FIFA World Cup 2022,2022/23,Australia,123951,Aaron Mooy,SC1,Celtic FC,central_mid,100.0,4,3857279 3857288 3857257 3869151
+24547,Alexander Bah,FIFA World Cup 2022,2022/23,Denmark,452607,Alexander Bah,PO1,SL Benfica,defender,100.0,2,3857266 3857257
+23874,Ali Gholizadeh,FIFA World Cup 2022,2022/23,Iran,294772,Ali Gholizadeh,BE1,Royal Charleroi Sporting Club,winger,100.0,3,3857271 3857273 3857278
+125818,Ali Karimi,FIFA World Cup 2022,2022/23,Iran,269393,Ali Karimi,TR1,Kayserispor,central_mid,100.0,3,3857271 3857273 3857278
+5239,Alireza Jahanbakhsh,FIFA World Cup 2022,2022/23,Iran,213268,Alireza Jahanbakhsh,NL1,Feyenoord Rotterdam,winger,100.0,2,3857271 3857273
+44703,Alistair Johnston,FIFA World Cup 2022,2022/23,Canada,637446,Alistair Johnston,SC1,Celtic FC,defender,100.0,3,3857268 3857281 3857276
+17042,Andreas Skov Olsen,FIFA World Cup 2022,2022/23,Denmark,432982,Andreas Skov Olsen,BE1,Club Brugge KV,winger,100.0,2,3857254 3857257
+8326,Andries Noppert,FIFA World Cup 2022,2022/23,Netherlands,276853,Andries Noppert,NL1,SC Heerenveen,goalkeeper,100.0,5,3857285 3857274 3857294 3869117 3869321
+6318,Andrija Živković,FIFA World Cup 2022,2022/23,Serbia,206843,Andrija Zivkovic,GR1,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,winger,100.0,3,3857258 3857259 3857256
+37737,Angelo Preciado,FIFA World Cup 2022,2022/23,Ecuador,450241,Angelo Preciado,BE1,KRC Genk,defender,100.0,3,3857286 3857274 3857267
+35592,Anis Ben Slimane,FIFA World Cup 2022,2022/23,Tunisia,546712,Anis Ben Slimane,DK1,Bröndby IF,attacking_mid,100.0,2,3857254 3857275
+25363,Antony,FIFA World Cup 2022,2022/23,Brazil,798687,Antony,PO1,FC Arouca,winger,100.0,4,3857258 3857269 3857280 3869420
+143854,António João Pereira Albuquerque Tavares Silva,FIFA World Cup 2022,2022/23,Portugal,650568,António Silva,PO1,SL Benfica,defender,100.0,1,3857262
+38285,Ayase Ueda,FIFA World Cup 2022,2022/23,Japan,589128,Ayase Ueda,BE1,Cercle Brugge,striker,100.0,1,3857295
+5479,Aziz Behich,FIFA World Cup 2022,2022/23,Australia,136834,Aziz Behich,SC1,Dundee United FC,defender,100.0,4,3857279 3857288 3857257 3869151
+156734,Bilal El Khannous,FIFA World Cup 2022,2022/23,Morocco,654982,Bilal El Khannouss,BE1,KRC Genk,attacking_mid,97.1,1,3869684
+11127,Borna Barišić,FIFA World Cup 2022,2022/23,Croatia,39125,Borna Barisic,SC1,Rangers FC,defender,100.0,1,3869219
+20750,Cody Gakpo,FIFA World Cup 2022,2022/23,Netherlands,434675,Cody Gakpo,NL1,PSV Eindhoven,winger,100.0,5,3857285 3857274 3857294 3869117 3869321
+30628,Daizen Maeda,FIFA World Cup 2022,2022/23,Japan,420931,Daizen Maeda,SC1,Celtic FC,winger,100.0,3,3857284 3857255 3869219
+3311,Daley Blind,FIFA World Cup 2022,2022/23,Netherlands,12282,Daley Blind,NL1,Ajax Amsterdam,defender,100.0,5,3857285 3857274 3857294 3869117 3869321
+8714,Damian Szymański,FIFA World Cup 2022,2022/23,Poland,259881,Damian Szymański,GR1,Athlitiki Enosi Konstantinoupoleos,central_mid,100.0,1,3857264
+3063,Danilo,FIFA World Cup 2022,2022/23,Brazil,519731,Danilo,NL1,Feyenoord Rotterdam,striker,100.0,3,3857258 3869253 3869420
+4318,Davy Klaassen,FIFA World Cup 2022,2022/23,Netherlands,182932,Davy Klaassen,NL1,Ajax Amsterdam,central_mid,100.0,4,3857285 3857274 3857294 3869117
+3471,Dejan Lovren,FIFA World Cup 2022,2022/23,Croatia,37838,Dejan Lovren,RU1,AO FK Zenit Sankt-Peterburg,defender,100.0,6,3857277 3857281 3857296 3869219 3869420 3869519
+12259,Denis Odoi,FIFA World Cup 2022,2022/23,Ghana,59641,Denis Odoi,BE1,Club Brugge KV,defender,100.0,1,3857299
+32975,Diogo Costa,FIFA World Cup 2022,2022/23,Portugal,357153,Diogo Costa,PO1,FC Porto,goalkeeper,100.0,5,3857298 3857270 3857262 3869254 3869486
+5630,Dries Mertens,FIFA World Cup 2022,2022/23,Belgium,56416,Dries Mertens,TR1,Galatasaray,striker,100.0,2,3857283 3857296
+3831,Dušan Tadić,FIFA World Cup 2022,2022/23,Serbia,36139,Dušan Tadić,NL1,Ajax Amsterdam,winger,100.0,3,3857258 3857259 3857256
+5567,Edson Omar Álvarez Velázquez,FIFA World Cup 2022,2022/23,Mexico,401356,Edson Álvarez,NL1,Ajax Amsterdam,central_mid,100.0,2,3857265 3857260
+5230,Ehsan Hajsafi,FIFA World Cup 2022,2022/23,Iran,77547,Ehsan Hajsafi,GR1,Athlitiki Enosi Konstantinoupoleos,defender,100.0,3,3857271 3857273 3857278
+28559,Enner Remberto Valencia Lastra,FIFA World Cup 2022,2022/23,Ecuador,139503,Enner Valencia,TR1,Fenerbahce,striker,100.0,3,3857286 3857274 3857267
+38718,Enzo Fernandez,FIFA World Cup 2022,2022/23,Argentina,648195,Enzo Fernández,PO1,SL Benfica,central_mid,100.0,7,3857300 3857289 3857264 3869151 3869321 3869519 3869685
+5600,Francisco Calvo,FIFA World Cup 2022,2022/23,Costa Rica,188470,Francisco Calvo,TR1,Konyaspor,defender,100.0,2,3857291 3857295
+3639,Georges-Kevin N'Koudou,FIFA World Cup 2022,2022/23,Cameroon,215679,Georges-Kevin N'Koudou,TR1,Beşiktaş Jimnastik Kulübü,winger,100.0,2,3857290 3857259
+38803,Gonçalo Matias Ramos,FIFA World Cup 2022,2022/23,Portugal,550550,Gonçalo Ramos,PO1,SL Benfica,striker,100.0,4,3857298 3857270 3869254 3869486
+37221,Hidemasa Morita,FIFA World Cup 2022,2022/23,Japan,524315,Hidemasa Morita,PO1,Sporting CP,central_mid,100.0,3,3857295 3857255 3869219
+16352,Issam Jebali,FIFA World Cup 2022,2022/23,Tunisia,122635,Issam Jebali,DK1,Odense Boldklub,striker,100.0,3,3857254 3857288 3857275
+3077,Jan Vertonghen,FIFA World Cup 2022,2022/23,Belgium,43250,Jan Vertonghen,BE1,RSC Anderlecht,defender,100.0,3,3857268 3857283 3857296
+26406,Jorge Eduardo Sánchez Ramos,FIFA World Cup 2022,2022/23,Mexico,356044,Jorge Sánchez,NL1,Ajax Amsterdam,defender,100.0,2,3857265 3857260
+4272,João Mário,FIFA World Cup 2022,2022/23,Portugal,149729,João Mário,PO1,SL Benfica,attacking_mid,100.0,2,3857298 3857262
+21809,Jurriën David Norman Timber,FIFA World Cup 2022,2022/23,Netherlands,420243,Jurriën Timber,NL1,Ajax Amsterdam,defender,100.0,4,3857274 3857294 3869117 3869321
+33488,Keanu Baccus,FIFA World Cup 2022,2022/23,Australia,479037,Keanu Baccus,SC1,St. Mirren FC,central_mid,100.0,4,3857279 3857288 3857257 3869151
+21879,Kenneth Taylor,FIFA World Cup 2022,2022/23,Netherlands,470394,Kenneth Taylor,NL1,Ajax Amsterdam,central_mid,100.0,1,3857294
+33495,Kye Rowles,FIFA World Cup 2022,2022/23,Australia,399990,Kye Rowles,SC1,Heart of Midlothian FC,defender,100.0,4,3857279 3857288 3857257 3869151
+20033,Luuk de Jong,FIFA World Cup 2022,2022/23,Netherlands,72522,Luuk de Jong,NL1,PSV Eindhoven,striker,100.0,1,3869321
+5228,Majid Hosseini,FIFA World Cup 2022,2022/23,Iran,294767,Majid Hosseini,TR1,Kayserispor,defender,100.0,3,3857271 3857273 3857278
+3512,Marko Grujić,FIFA World Cup 2022,2022/23,Serbia,222813,Marko Grujić,PO1,FC Porto,central_mid,100.0,1,3857259
+3240,Mat Ryan,FIFA World Cup 2022,2022/23,Australia,128969,Mathew Ryan,NL1,AZ Alkmaar,goalkeeper,100.0,4,3857279 3857288 3857257 3869151
+6297,Maxi Gómez,FIFA World Cup 2022,2022/23,Uruguay,396894,Maxi Gómez,TR1,Trabzonspor,striker,100.0,2,3857270 3857293
+5226,Mehdi Taremi,FIFA World Cup 2022,2022/23,Iran,307058,Mehdi Taremi,PO1,FC Porto,striker,100.0,3,3857271 3857273 3857278
+3457,Michy Batshuayi,FIFA World Cup 2022,2022/23,Belgium,179184,Michy Batshuayi,TR1,Fenerbahce,striker,100.0,2,3857268 3857283
+17033,Mohammed Kudus,FIFA World Cup 2022,2022/23,Ghana,543499,Mohammed Kudus,NL1,Ajax Amsterdam,winger,100.0,3,3857298 3857299 3857293
+16015,Moumi Ngamaleu,FIFA World Cup 2022,2022/23,Cameroon,266768,Nicolas Moumi Ngamaleu,RU1,FK Dinamo Moskva,winger,100.0,2,3857290 3857280
+3090,Nicolás Hernán Otamendi,FIFA World Cup 2022,2022/23,Argentina,54781,Nicolás Otamendi,PO1,SL Benfica,defender,100.0,7,3857300 3857289 3857264 3869151 3869321 3869519 3869685
+21547,Noa Lang,FIFA World Cup 2022,2022/23,Netherlands,339332,Noa Lang,BE1,Club Brugge KV,winger,100.0,1,3869321
+26280,Orbelín Pineda,FIFA World Cup 2022,2022/23,Mexico,334042,Orbelín Pineda,GR1,Athlitiki Enosi Konstantinoupoleos,central_mid,100.0,1,3857260
+20016,Kléper Laveran Lima Ferreira,FIFA World Cup 2022,2022/23,Portugal,14132,Pepe,PO1,FC Porto,defender,100.0,4,3857270 3857262 3869254 3869486
+10868,Ricardo Horta,FIFA World Cup 2022,2022/23,Portugal,261927,Ricardo Horta,PO1,SC Braga,winger,100.0,3,3857262 3869254 3869486
+5219,Romain Saïss,FIFA World Cup 2022,2022/23,Morocco,204198,Romain Saïss,TR1,Beşiktaş Jimnastik Kulübü,defender,100.0,6,3857277 3857283 3857276 3869220 3869486 3869552
+29758,Sam Adekugbe,FIFA World Cup 2022,2022/23,Canada,287578,Sam Adekugbe,TR1,Hatayspor,defender,100.0,3,3857268 3857281 3857276
+4664,Sebastian Szymański,FIFA World Cup 2022,2022/23,Poland,320748,Sebastian Szymanski,NL1,Feyenoord Rotterdam,attacking_mid,100.0,2,3857265 3869152
+6300,Sebastián Coates,FIFA World Cup 2022,2022/23,Uruguay,102427,Sebastián Coates,PO1,Sporting CP,defender,100.0,2,3857270 3857293
+7745,Steven Berghuis,FIFA World Cup 2022,2022/23,Netherlands,129554,Steven Berghuis,NL1,Ajax Amsterdam,winger,100.0,4,3857285 3857274 3857294 3869321
+8259,Steven Bergwijn,FIFA World Cup 2022,2022/23,Netherlands,284165,Steven Bergwijn,NL1,Ajax Amsterdam,winger,100.0,4,3857285 3857274 3869117 3869321
+11846,Steven Vitória,FIFA World Cup 2022,2022/23,Canada,54716,Steven Vitória,PO1,GD Chaves,defender,100.0,3,3857268 3857281 3857276
+24024,Tajon Buchanan,FIFA World Cup 2022,2022/23,Canada,638793,Tajon Buchanan,BE1,Club Brugge KV,winger,100.0,3,3857268 3857281 3857276
+20005,Toby Alderweireld,FIFA World Cup 2022,2022/23,Belgium,42710,Toby Alderweireld,BE1,Royal Antwerp FC,defender,100.0,3,3857268 3857283 3857296
+17043,Victor Nelsson,FIFA World Cup 2022,2022/23,Denmark,422951,Victor Nelsson,TR1,Galatasaray,defender,100.0,1,3857266
+11174,Vincent Aboubakar,FIFA World Cup 2022,2022/23,Cameroon,147487,Vincent Aboubakar,TR1,Beşiktaş Jimnastik Kulübü,striker,100.0,3,3857290 3857259 3857280
+3264,Vincent Janssen,FIFA World Cup 2022,2022/23,Netherlands,207015,Vincent Janssen,BE1,Royal Antwerp FC,striker,100.0,2,3857285 3857294
+34639,Vitinha,FIFA World Cup 2022,2022/23,Portugal,586853,Vitinha,PO1,SC Braga,striker,100.0,3,3857262 3869254 3869486
+105944,Wajdi Kechrida,FIFA World Cup 2022,2022/23,Tunisia,407885,Wajdi Kechrida,GR1,APS Atromitos Athinon,defender,100.0,3,3857254 3857288 3857275
+7829,Wout Weghorst,FIFA World Cup 2022,2022/23,Netherlands,228645,Wout Weghorst,TR1,Beşiktaş Jimnastik Kulübü,striker,100.0,4,3857274 3857294 3869117 3869321
+39167,Xavi Simons,FIFA World Cup 2022,2022/23,Netherlands,566931,Xavi Simons,NL1,PSV Eindhoven,attacking_mid,100.0,1,3869117
+37122,Yuki Soma,FIFA World Cup 2022,2022/23,Japan,594069,Yuki Soma,PO1,Casa Pia AC,winger,100.0,1,3857295
+15872,Erick Gutiérrez,FIFA World Cup 2022,2022/23,Mexico,298796,Érick Gutiérrez,NL1,PSV Eindhoven,central_mid,100.0,1,3857289
+48383,Abdülkerim Bardakcı,UEFA Euro 2024,2023/24,Turkey,199316,Abdülkerim Bardakcı,TR1,Galatasaray,defender,100.0,4,3938639 3930174 3941022 3942382
+7663,Adam Buksa,UEFA Euro 2024,2023/24,Poland,267160,Adam Buksa,TR1,Antalyaspor,striker,100.0,2,3938637 3938641
+31968,Adam Gnezda Čerin,UEFA Euro 2024,2023/24,Slovenia,401394,Adam Gnezda Cerin,GR1,Panathinaikos Athlitikos Omilos,central_mid,100.0,4,3930162 3930170 3930181 3941020
+24547,Alexander Bah,UEFA Euro 2024,2023/24,Denmark,452607,Alexander Bah,PO1,SL Benfica,defender,100.0,4,3930162 3930171 3930182 3940983
+45125,Alexandru Cicâldău,UEFA Euro 2024,2023/24,Romania,295810,Alexandru Cicâldău,TR1,Konyaspor,attacking_mid,100.0,1,3941021
+37330,Anatolii Trubin,UEFA Euro 2024,2023/24,Ukraine,537844,Anatoliy Trubin,PO1,SL Benfica,goalkeeper,100.0,2,3938640 3938645
+17042,Andreas Skov Olsen,UEFA Euro 2024,2023/24,Denmark,432982,Andreas Skov Olsen,BE1,Club Brugge KV,winger,100.0,3,3930171 3930182 3940983
+6318,Andrija Živković,UEFA Euro 2024,2023/24,Serbia,206843,Andrija Zivkovic,GR1,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,winger,100.0,3,3930163 3930170 3930182
+8830,Andriy Yarmolenko,UEFA Euro 2024,2023/24,Ukraine,69015,Andriy Yarmolenko,UKR1,Dynamo Kyiv,winger,100.0,3,3938638 3938640 3938645
+143854,António João Pereira Albuquerque Tavares Silva,UEFA Euro 2024,2023/24,Portugal,650568,António Silva,PO1,SL Benfica,defender,100.0,2,3930174 3938644
+134209,Barış Alper Yılmaz,UEFA Euro 2024,2023/24,Turkey,541537,Barış Alper Yılmaz,TR1,Galatasaray,winger,100.0,5,3938639 3930174 3930184 3941022 3942382
+21880,Brian Brobbey,UEFA Euro 2024,2023/24,Netherlands,473169,Brian Brobbey,NL1,Ajax Amsterdam,striker,100.0,1,3942819
+10534,Callum McGregor,UEFA Euro 2024,2023/24,Scotland,120977,Callum McGregor,SC1,Celtic FC,central_mid,100.0,3,3930158 3930169 3930177
+3648,Cenk Tosun,UEFA Euro 2024,2023/24,Turkey,45671,Cenk Tosun,TR1,Beşiktaş Jimnastik Kulübü,striker,100.0,2,3930184 3942382
+31193,Denis Dragus,UEFA Euro 2024,2023/24,Romania,405399,Denis Drăguș,TR1,Gaziantep FK,striker,100.0,4,3938638 3930175 3930183 3941021
+16298,Denis Vavro,UEFA Euro 2024,2023/24,Slovakia,239962,Denis Vavro,DK1,FC Copenhagen,defender,100.0,4,3930164 3938640 3930183 3941017
+32975,Diogo Costa,UEFA Euro 2024,2023/24,Portugal,357153,Diogo Costa,PO1,FC Porto,goalkeeper,100.0,5,3930166 3930174 3938644 3941020 3942349
+16531,Dominik Livaković,UEFA Euro 2024,2023/24,Croatia,205927,Dominik Livakovic,TR1,Fenerbahce,goalkeeper,100.0,3,3930160 3930167 3930178
+3831,Dušan Tadić,UEFA Euro 2024,2023/24,Serbia,36139,Dušan Tadić,TR1,Fenerbahce,winger,100.0,3,3930163 3930170 3930182
+16879,Dávid Hancko,UEFA Euro 2024,2023/24,Slovakia,404418,Dávid Hancko,NL1,Feyenoord Rotterdam,defender,100.0,4,3930164 3938640 3930183 3941017
+92611,Ernest Muçi,UEFA Euro 2024,2023/24,Albania,583917,Ernest Muci,TR1,Beşiktaş Jimnastik Kulübü,attacking_mid,100.0,2,3930161 3930179
+30438,Ferdi Erenay Kadıoğlu,UEFA Euro 2024,2023/24,Turkey,369316,Ferdi Kadıoğlu,TR1,Fenerbahce,defender,92.9,5,3938639 3930174 3930184 3941022 3942382
+7993,Filip Mladenović,UEFA Euro 2024,2023/24,Serbia,168063,Filip Mladenovic,GR1,Panathinaikos Athlitikos Omilos,defender,100.0,3,3930163 3930170 3930182
+28242,Florin Constantin Niţă,UEFA Euro 2024,2023/24,Romania,200475,Florin Niță,TR1,Gaziantep FK,goalkeeper,100.0,4,3938638 3930175 3930183 3941021
+39624,Francisco Conceição,UEFA Euro 2024,2023/24,Portugal,487474,Francisco Conceição,PO1,FC Porto,winger,100.0,4,3930166 3938644 3941020 3942349
+38975,Georgiy Sudakov,UEFA Euro 2024,2023/24,Ukraine,623325,Georgiy Sudakov,UKR1,FC Shakhtar Donetsk,attacking_mid,100.0,3,3938638 3938640 3938645
+8778,Gernot Trauner,UEFA Euro 2024,2023/24,Austria,59145,Gernot Trauner,NL1,Feyenoord Rotterdam,defender,100.0,2,3930165 3938641
+42106,Gonçalo Bernardo Inácio,UEFA Euro 2024,2023/24,Portugal,549006,Gonçalo Inácio,PO1,Sporting CP,defender,100.0,2,3930166 3938644
+3077,Jan Vertonghen,UEFA Euro 2024,2023/24,Belgium,43250,Jan Vertonghen,BE1,RSC Anderlecht,defender,100.0,3,3930175 3938645 3941019
+15503,Jerdy Schouten,UEFA Euro 2024,2023/24,Netherlands,347900,Jerdy Schouten,NL1,PSV Eindhoven,central_mid,100.0,6,3938637 3930173 3930180 3941021 3942382 3942819
+21633,Joey Veerman,UEFA Euro 2024,2023/24,Netherlands,408574,Joey Veerman,NL1,PSV Eindhoven,central_mid,100.0,6,3938637 3930173 3930180 3941021 3942382 3942819
+52218,Johan Bakayoko,UEFA Euro 2024,2023/24,Belgium,565424,Johan Bakayoko,NL1,PSV Eindhoven,winger,100.0,2,3930164 3938645
+37148,Josip Šutalo,UEFA Euro 2024,2023/24,Croatia,371001,Josip Sutalo,NL1,Ajax Amsterdam,defender,100.0,3,3930160 3930167 3930178
+143859,João Neves,UEFA Euro 2024,2023/24,Portugal,670681,João Neves,PO1,SL Benfica,central_mid,100.0,2,3930174 3938644
+30940,Jure Balkovec,UEFA Euro 2024,2023/24,Slovenia,181410,Jure Balkovec,TR1,Alanyaspor,defender,100.0,2,3930181 3941020
+12293,Kaan Ayhan,UEFA Euro 2024,2023/24,Turkey,119031,Kaan Ayhan,TR1,Galatasaray,central_mid,100.0,5,3938639 3930174 3930184 3941022 3942382
+6302,Kasper Dolberg,UEFA Euro 2024,2023/24,Denmark,283196,Kasper Dolberg,BE1,RSC Anderlecht,striker,100.0,2,3930162 3930182
+3815,Kasper Schmeichel,UEFA Euro 2024,2023/24,Denmark,16911,Kasper Schmeichel,BE1,RSC Anderlecht,goalkeeper,100.0,4,3930162 3930171 3930182 3940983
+49689,Kerem Aktürkoglu,UEFA Euro 2024,2023/24,Turkey,382528,Kerem Aktürkoğlu,TR1,Galatasaray,winger,100.0,5,3938639 3930174 3930184 3941022 3942382
+12493,Krzysztof Piątek,UEFA Euro 2024,2023/24,Poland,327757,Krzysztof Piatek,TR1,Basaksehir FK,striker,100.0,1,3938641
+38169,Lawrence Shankland,UEFA Euro 2024,2023/24,Scotland,225744,Lawrence Shankland,SC1,Heart of Midlothian FC,striker,100.0,3,3930158 3930169 3930177
+28368,Luka Ivanušec,UEFA Euro 2024,2023/24,Croatia,387105,Luka Ivanušec,NL1,Feyenoord Rotterdam,attacking_mid,100.0,1,3930178
+22352,Lutsharel Geertruida,UEFA Euro 2024,2023/24,Netherlands,420210,Lutsharel Geertruida,NL1,Feyenoord Rotterdam,defender,100.0,2,3930173 3930180
+49097,Mario Mitaj,UEFA Euro 2024,2023/24,Albania,726114,Mario Mitaj,RU1,"Футбольный клуб ""Локомотив"" Москва",defender,100.0,3,3930161 3930167 3930179
+30310,Fehmi Mert Günok,UEFA Euro 2024,2023/24,Turkey,51894,Mert Günok,TR1,Beşiktaş Jimnastik Kulübü,goalkeeper,100.0,4,3938639 3930184 3941022 3942382
+10826,Mert Müldür,UEFA Euro 2024,2023/24,Turkey,353922,Mert Müldür,TR1,Fenerbahce,defender,100.0,4,3938639 3930184 3941022 3942382
+8669,Mijat Gaćinović,UEFA Euro 2024,2023/24,Serbia,215864,Mijat Gacinovic,GR1,Athlitiki Enosi Konstantinoupoleos,attacking_mid,100.0,1,3930170
+54140,Mirlind Daku,UEFA Euro 2024,2023/24,Albania,521872,Mirlind Daku,RU1,FC Rubin Kazan,striker,100.0,1,3930167
+8621,Morten Hjulmand,UEFA Euro 2024,2023/24,Denmark,461496,Morten Hjulmand,PO1,Sporting CP,central_mid,100.0,3,3930162 3930171 3930182
+18617,Mykola Matvienko,UEFA Euro 2024,2023/24,Ukraine,289059,Mykola Matvienko,UKR1,FC Shakhtar Donetsk,defender,100.0,3,3938638 3938640 3938645
+21294,Mykola Shaparenko,UEFA Euro 2024,2023/24,Ukraine,368611,Mykola Shaparenko,UKR1,Dynamo Kyiv,central_mid,100.0,3,3938638 3938640 3938645
+30059,Oleksandr Svatok,UEFA Euro 2024,2023/24,Ukraine,244271,Oleksandr Svatok,UKR1,SC Dnipro-1,defender,100.0,1,3938645
+45863,Oleksandr Tymchyk,UEFA Euro 2024,2023/24,Ukraine,287792,Oleksandr Tymchyk,UKR1,Dynamo Kyiv,defender,100.0,3,3938638 3938640 3938645
+31892,Oleksandr Zubkov,UEFA Euro 2024,2023/24,Ukraine,289075,Oleksandr Zubkov,UKR1,FC Shakhtar Donetsk,winger,100.0,1,3938640
+22212,Orkun Kökçü,UEFA Euro 2024,2023/24,Turkey,454567,Orkun Kökçü,PO1,SL Benfica,central_mid,100.0,4,3938639 3930174 3930184 3941022
+9731,Patrick Pentz,UEFA Euro 2024,2023/24,Austria,223972,Patrick Pentz,DK1,Bröndby IF,goalkeeper,100.0,4,3930165 3938641 3930180 3941022
+20016,Kléper Laveran Lima Ferreira,UEFA Euro 2024,2023/24,Portugal,14132,Pepe,PO1,FC Porto,defender,100.0,4,3930166 3930174 3941020 3942349
+23987,Rey Manaj,UEFA Euro 2024,2023/24,Albania,308278,Rey Manaj,TR1,Sivasspor,striker,100.0,3,3930161 3930167 3930179
+34904,Róbert Boženík,UEFA Euro 2024,2023/24,Slovakia,454576,Róbert Boženík,PO1,Boavista FC,striker,100.0,4,3930164 3938640 3930183 3941017
+4664,Sebastian Szymański,UEFA Euro 2024,2023/24,Poland,320748,Sebastian Szymanski,TR1,Fenerbahce,attacking_mid,100.0,2,3938637 3938643
+149576,Semih Kılıçsoy,UEFA Euro 2024,2023/24,Turkey,875334,Semih Kılıçsoy,TR1,Beşiktaş Jimnastik Kulübü,striker,100.0,1,3942382
+16514,Sergiy Sydorchuk,UEFA Euro 2024,2023/24,Ukraine,124182,Sergiy Sydorchuk,BE1,KVC Westerlo,central_mid,100.0,1,3938640
+8259,Steven Bergwijn,UEFA Euro 2024,2023/24,Netherlands,284165,Steven Bergwijn,NL1,Ajax Amsterdam,winger,100.0,2,3941021 3942382
+5548,Steven Zuber,UEFA Euro 2024,2023/24,Switzerland,68033,Steven Zuber,GR1,Athlitiki Enosi Konstantinoupoleos,winger,100.0,2,3940878 3942227
+11000,Taras Stepanenko,UEFA Euro 2024,2023/24,Ukraine,59970,Taras Stepanenko,UKR1,FC Shakhtar Donetsk,central_mid,100.0,2,3938638 3938645
+5527,Thomas Delaney,UEFA Euro 2024,2023/24,Denmark,91849,Thomas Delaney,BE1,RSC Anderlecht,central_mid,100.0,3,3930162 3930182 3940983
+205932,Vanja Drkušić,UEFA Euro 2024,2023/24,Slovenia,371856,Vanja Drkusic,RU1,FK Sochi,defender,100.0,4,3930162 3930170 3930181 3941020
+40141,Vladyslav Vanat,UEFA Euro 2024,2023/24,Ukraine,631821,Vladyslav Vanat,UKR1,Dynamo Kyiv,striker,100.0,1,3938645
+144127,Volodymyr Brazhko,UEFA Euro 2024,2023/24,Ukraine,669306,Volodymyr Brazhko,UKR1,Dynamo Kyiv,central_mid,100.0,3,3938638 3938640 3938645
+45785,Yukhym Konoplya,UEFA Euro 2024,2023/24,Ukraine,467250,Yukhym Konoplya,UKR1,FC Shakhtar Donetsk,defender,100.0,1,3938638
+114832,Zeno Debast,UEFA Euro 2024,2023/24,Belgium,548193,Zeno Debast,BE1,RSC Anderlecht,defender,100.0,2,3930164 3930175
+30311,İrfan Can Kahveci,UEFA Euro 2024,2023/24,Turkey,216603,İrfan Can Kahveci,TR1,Fenerbahce,winger,100.0,1,3941022
+78241,İsmail Yüksek,UEFA Euro 2024,2023/24,Turkey,613725,İsmail Yüksek,TR1,Fenerbahce,central_mid,100.0,3,3930174 3930184 3941022

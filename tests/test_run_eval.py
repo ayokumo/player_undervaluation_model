@@ -59,3 +59,18 @@ def test_citation_check():
 def test_note_title_that_ends_with_a_season_is_matched_whole():
     good, total = score_citations("[Note: Belgian Pro League attackers, 2025/26]", set(), {"Belgian Pro League attackers, 2025/26"})
     assert (good, total) == (1, 1)
+
+
+def test_choice_questions():
+    q = {"kind": "choice", "options": ["own half", "final third", "balanced"], "expected_option": "final third", "expected_rows": []}
+    assert score_answer(q, "Mostly the final third [Vision: X, 2022/23]")
+    assert not score_answer(q, "own half and final third")
+    assert not score_answer(q, "not enough data")
+    yn = {"kind": "choice", "options": ["yes", "no"], "expected_option": "no", "expected_rows": []}
+    assert score_answer(yn, "No, few carries")
+    assert not score_answer(yn, "not enough data")
+
+
+def test_vision_split_is_separate_and_has_8_questions():
+    assert len(load_benchmark(split="vision")) == 8
+    assert len(load_benchmark()) == 20
