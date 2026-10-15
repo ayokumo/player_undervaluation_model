@@ -234,3 +234,28 @@ Passing territory and shooting distance are clearly better than guessing. Pass d
 * The vision model reads small images and its tags are often wrong in the ways shown above. Do not treat the descriptions as scouting facts.
 
 Run order: `python -m rag.build_index` first (it rebuilds the index table), then `python -m rag.vision.link_players`, `extract_actions`, `summarise`, `render`, `describe`, `index_vision`, `check_tags`, and `python -m eval.build_benchmark` (adds the 8 vision questions), then `python -m eval.run_eval --split vision` and `--split vision --no-vision`.
+
+
+## Run the assistant in Docker (Step 5, part 1): written 2026-10-15
+
+The assistant ships as a small web service (`app/server.py`) with a one page demo, packaged with Docker Compose: one container for Postgres with pgvector, one for the app.
+
+```bash
+cp .env.example .env        # then put your ANTHROPIC_API_KEY in .env
+docker compose up --build   # first build takes several minutes (torch, embedding model)
+# open http://localhost:8000
+```
+
+How it works:
+* `deploy/demo_db.sql.gz` (11 MB) holds the two tables the assistant reads, `rag.documents` (8,346 documents with embeddings) and `tm.player_season_stats` (8,177 rows). Postgres loads it on first start, so the demo needs no Transfermarkt files and no rebuild of the index. The source data is CC0.
+* The embedding model is downloaded once while the image is built and stored inside the image, so the running container never needs Hugging Face.
+* The database port is not published. Only the app container can reach it.
+* The API key is read from your shell or `.env` and is never baked into the image or committed. `.dockerignore` keeps `.env` out of the build.
+* Three limits protect the API credit: 300 characters per question, 15 questions per IP per day, 200 per day for the whole service (`DAILY_LIMIT_PER_IP`, `DAILY_LIMIT_TOTAL`). Counters live in memory and reset when the container restarts.
+* `GET /health` checks the database. `POST /ask` takes `{"question": "..."}` and returns the answer with its sources.
+
+Tests: `tests/test_server.py` covers the limits and the response shape with the model call stubbed out. The service was also run against the real index and API with `uvicorn app.server:app` on 2026-10-15, answering the stats questions with citations.
+
+Status: the Dockerfile and compose file were written in an environment with no Docker daemon, so they have not been built there. The first real build is on the author's machine and the result is recorded below once it has run.
+
+Known limitation found while testing: the records label leagues by code ("NL1"), so a question that says only "Eredivisie" can return a cautious answer that says the records never name the league. Adding the code to the question ("Eredivisie (NL1)") works. The prompts and index were frozen for the benchmark, so this was not changed. The page examples use the code form.

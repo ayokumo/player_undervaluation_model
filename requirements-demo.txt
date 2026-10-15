@@ -1,0 +1,12 @@
+# Runtime packages for the Docker image (the web demo only). Versions are the ones the tests ran with.
+# torch is installed separately in the Dockerfile from the CPU wheel index to keep the image small.
+fastapi==0.143.1
+uvicorn==0.53.0
+psycopg[binary]==3.3.6
+python-dotenv==1.2.3
+pydantic==2.13.5
+langchain==1.4.6
+langchain-core==1.6.10
+langchain-anthropic==1.7.6
+langgraph==1.2.15
+sentence-transformers==6.1.0

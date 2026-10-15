@@ -1,0 +1,16 @@
+.git
+.env
+data
+figures
+notebooks
+reports
+results
+notes
+eval
+tests
+sql
+src
+docs
+deploy
+**/__pycache__
+*.md

@@ -1,0 +1,35 @@
+# Runs the scouting assistant: a Postgres with pgvector (loaded from deploy/demo_db.sql.gz on first start) and the web app.
+# Usage: put ANTHROPIC_API_KEY in a .env file next to this one, then  docker compose up --build
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: football
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./deploy/demo_db.sql.gz:/docker-entrypoint-initdb.d/10_demo_db.sql.gz:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d football"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    # no ports published: only the app container can reach the database
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/football
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:?Set ANTHROPIC_API_KEY in .env}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-5-5}
+      DAILY_LIMIT_PER_IP: ${DAILY_LIMIT_PER_IP:-15}
+      DAILY_LIMIT_TOTAL: ${DAILY_LIMIT_TOTAL:-200}
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+volumes:
+  pgdata:

@@ -65,3 +65,9 @@ Decision: players are linked to the league index by name (ratio 92 or more) AND 
 Decision: Claude Sonnet 5.5 describes the images and picks tags from fixed lists. Rule based tags from the event data are the ground truth and thresholds were fixed before comparison.
 Result: tag agreement 49% to 73% (carries worse than guessing). Vision documents did not change accuracy on the 20 league questions (19/20 both ways). On 8 vision only questions: 0/8 without, 4/8 with.
 Not retuned to look better.
+
+## 2026-10-15: Docker packaging (Step 5)
+Decision: ship the two tables the assistant reads as a 11 MB gzipped SQL dump (CC0 data) and load it into pgvector Postgres on first start, instead of rebuilding from raw CSVs.
+Decision: CPU only torch and the embedding model baked into the image; non root user; database port not published.
+Decision: public demo guarded by per question length and per IP and total daily limits to protect API credit.
+Not changed: prompts and index stay frozen after the benchmark, so the league code ("NL1") limitation is documented instead of fixed.
