@@ -256,6 +256,6 @@ How it works:
 
 Tests: `tests/test_server.py` covers the limits and the response shape with the model call stubbed out. The service was also run against the real index and API with `uvicorn app.server:app` on 2026-10-15, answering the stats questions with citations.
 
-Status: built and run with `docker compose up --build` on an Apple Silicon Mac (Docker 29.8.2) on 2026-10-15. Both containers reported healthy, `/health` returned 8,346 documents, and the demo page answered a question with a source tag. Docker was not available in the environment where the files were written, so this first build was done by the author on a laptop. Not yet deployed anywhere public.
+Status: built and run with `docker compose up --build` on an Apple Silicon Mac (Docker 29.8.2) on 2026-10-15. Both containers reported healthy, `/health` returned 8,346 documents, and the demo page answered a question with a source tag. Docker was not available in the environment where the files were written, so this first build was done by the author on a laptop. Deployed to a small AWS server on 2026-10-16, see `docs/deploy_aws.md` (plain HTTP on a bare IP, runs on free plan credits for about 6 months).
 
 Known limitation found while testing: the records label leagues by code ("NL1"), so a question that says only "Eredivisie" can return a cautious answer that says the records never name the league. Adding the code to the question ("Eredivisie (NL1)") works. The prompts and index were frozen for the benchmark, so this was not changed. The page examples use the code form.
