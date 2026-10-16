@@ -28,7 +28,7 @@ services:
       DAILY_LIMIT_PER_IP: ${DAILY_LIMIT_PER_IP:-15}
       DAILY_LIMIT_TOTAL: ${DAILY_LIMIT_TOTAL:-200}
     ports:
-      - "8000:8000"
+      - "${APP_PORT:-8000}:8000"
     restart: unless-stopped
 
 volumes:
